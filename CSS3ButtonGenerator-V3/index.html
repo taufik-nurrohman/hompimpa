@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+    <meta content="online css button generator, online css button maker, online css button creator" name="keywords"/>
+    <meta content="Portable CSS button maker tool for quick time works" name="description"/>
+    <meta content="Taufik Nurrohman" name="author"/>
+    <title>Portable CSS3 Button Generator</title>
+    <link rel="shorcut icon" href="http://mini-web-tools.googlecode.com/svn/p/img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui-custom-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/colorpicker.css" />
+
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js"></script>
+    <script type="text/javascript" src="js/colorpicker.js"></script>
+    <script type="text/javascript" src="js/buttonmaker.js"></script>
+    <style type="text/css">
+    .addthis_toolbox {
+      position:fixed !important;
+      position:absolute;
+      right:12px;
+      bottom:10px;
+    }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="page-wrap">
+
+        <div id="button-box">
+            <a class="button" href="#">Generate CSS</a>
+        </div>
+
+        <div id="prikitiw">
+            <div id="colors">
+                <div class="hompi-warna"><label for="topGradientValue">Top Gradient Color</label>
+                <input type="text" maxlength="6" size="6" id="topGradientValue" class="pickable" rel="backgroundTop" value="2770d6" style="background: #2770d6;" /></div>
+
+                <div class="hompi-warna"><label for="middleGradientValue">Middle Gradient Color</label>
+                <input type="text" maxlength="6" size="6" id="middleGradientValue" class="pickable" rel="backgroundCent" value="3161c2" style="background: #3161c2;" /></div>
+
+                <div class="hompi-warna"><label for="bottomGradientValue">Bottom Gradient Color</label>
+                <input type="text" maxlength="6" size="6" id="bottomGradientValue" class="pickable" rel="backgroundBottom" value="3059ab" style="background: #3059ab;" /></div>
+
+                <div class="hompi-warna"><label for="borderColorValue">Border Color</label>
+                <input type="text" maxlength="6" size="6" id="borderColorValue" class="pickable" rel="borderColor" value="3f5691" style="background: #3f5691;" /></div>
+
+                <div class="hompi-warna"><label for="textColor">Text Color</label>
+                <input type="text" maxlength="6" size="6" id="textColor" class="pickable" rel="textColor" value="ffffff" style="background: #ffffff;" /></div>
+
+                <div class="hompi-warna"><label for="bayangColor">Shadow Color</label>
+                <input type="text" maxlength="6" size="6" id="bayangColor" class="pickable" rel="warnaBayang" value="515151" style="background: #515151;" /></div>
+ 
+                <div id="hover-section">
+                    <div class="hompi-warna"><label for="hoverBackgroundColorTopValue">Hover Top Gradient Color</label>
+                    <input type="text" maxlength="6" size="6" id="hoverBackgroundColorTopValue" class="pickable" rel="hoverBackgroundTop" value="49579c" style="background: #49579c;" /></div>
+
+                    <div class="hompi-warna"><label for="hoverBackgroundColorCentValue">Hover Middle Gradient Color</label>
+                    <input type="text" maxlength="6" size="6" id="hoverBackgroundColorCentValue" class="pickable" rel="hoverBackgroundCent" value="1b3880" style="background: #1b3880;" /></div>
+
+                    <div class="hompi-warna"><label for="hoverBackgroundColorBottomValue">Hover Bottom Gradient Color</label>
+                    <input type="text" maxlength="6" size="6" id="hoverBackgroundColorBottomValue" class="pickable" rel="hoverBackgroundBottom" value="142b70" style="background: #142b70;" /></div>
+
+                    <div class="hompi-warna"><label for="borderHoverColorValue">Hover Border Color</label>
+                    <input type="text" maxlength="6" size="6" id="borderHoverColorValue" class="pickable" rel="borderHoverColor" value="0f2852" style="background: #0f2852;" /></div>
+
+                    <div class="hompi-warna"><label for="hoverTextColorValue">Hover Text Color</label>
+                    <input type="text" maxlength="6" size="6" id="hoverTextColorValue" class="pickable" rel="hoverColor" value="ffffff" style="background: #ffffff;" /></div>
+               </div>
+           </div>
+         </div>
+
+        <div id="controls">
+            <span class="bt" id="ukur">Variable Size</span>
+            <span class="bt" id="opsi">More Options</span>
+            <span class="bt" id="advanced">Advanced</span>
+            <span class="bt" id="toggle1"><span>Dark Background</span><span style="display:none;">Light Background</span></span>
+            <span class="bt">Change Class: <input type="text" class="teks" id="ganti" value="button" /></span>
+            <span class="bt" id="showhow">How to Use</span>
+        </div>    
+
+        <div class="clear"></div>
+
+        <div id="ukuran">
+            Font Size:
+            <div class="sliderBar" id="font-sizer" title="Font Size"></div>
+            Padding:
+            <div class="sliderBar" id="sizer" title="Button Padding"></div>
+            Border Width:
+            <div class="sliderBar" id="penebal-border" title="Border Width"></div>
+            Border Radius:
+            <div class="sliderBar" id="border-rounder" title="Border Radius"></div>
+            Shadow Offset-X:
+            <div class="sliderBar" id="bayanganX" title="Shadow Offset-X"></div>
+            Shadow Offset-Y:
+            <div class="sliderBar" id="bayanganY" title="Shadow Offset-Y"></div>
+            Shadow Blur: <div class="sliderBar" id="bayangan" title="Button Shadow Blur"></div>
+        </div>
+
+
+        <div id="opsi-lain">
+                <table border="0">
+                <tr><td>Font Family:</td><td>
+                    <select id="fontSelector">
+                        <option value="Calibri,Arial,Sans-Serif">Calibri</option>
+                        <option value="Arial,Sans-Serif">Arial</option>
+                        <option value="Helvetica,Arial,Sans-Serif">Helvetica</option>
+                        <option value="Georgia,Serif">Georgia</option>
+                        <option value="Times,Serif">Times New Roman</option>
+                        <option value="'Comic Sans MS',Arial,Sans-Serif">Comic Sans MS</option>
+                        <option value="Verdana,Arial,Serif">Verdana</option>
+                        <option value="Monospace,Serif">Monospace</option>
+                        <option value="'Garamond',Helvetica,Arial,Sans-Serif">Garamond</option>
+                        <option value="Impact,Helvetica,Arial,Sans-Serif">Impact</option>
+                        <option value="'Cooper Black','Comic Sans MS',Arial,Sans-Serif">Cooper Black</option>
+                        <option value="'Showcard Gothic',Helvetica,Arial,Sans-Serif">Showcard Gothic</option>
+                        <option value="'Bauhaus 93',Helvetica,Arial,Sans-Serif">Bauhaus 93</option>
+                        <option selected="selected" value="'Century Gothic',Helvetica,Arial,Sans-Serif">Century Gothic</option>
+                        <option value="Tahoma,Verdana,Arial,Sans-Serif">Tahoma</option>
+                    </select>
+                </td></tr>
+                <tr><td>Font Weight:</td><td>
+                    <select id="fontWeight">
+                        <option selected="selected" value="normal">Regular</option>
+                        <option value="bold">Bold</option>
+                        <option value="italic">Italic</option>
+                    </select>
+                </td></tr>
+                <tr><td>Border Style:</td><td>
+                    <select id="borderStyleSelector">
+                        <option selected="selected" value="solid">Solid</option>
+                        <option value="double">Double</option>
+                        <option value="dashed">Dashed</option>
+                        <option value="dotted">Dotted</option>
+                        <option value="outset">Outset</option>
+                        <option value="inset">Inset</option>
+                        <option value="ridge">Ridge</option>
+                        <option value="groove">Groove</option>
+                    </select>
+                </td></tr>
+                <tr><td>Box Shadow:</td><td>
+                    <select id="boxShadow">
+                        <option selected="selected" value="">Outset</option>
+                        <option value="inset ">Inset</option>
+                    </select>
+                </td></tr>
+                <tr><td>Text Dimension:</td><td>
+                    <select id="textShadow">
+                        <option selected="selected" value="rgba(0,0,0,0.4)">Embossed</option>
+                        <option value="rgba(255,255,255,0.3)">Letterpress</option>
+                    </select>
+                </td></tr>
+            </table>
+            <p>Letterpress dimensional option will looks good only when combined with the text color that darker than the the button background color.</p>
+        </div>
+
+
+        <div id="color-stop-advanced">
+            <h4>Default Behaviour Color Stop</h4>
+            <div class="def">
+                <div class="sliderBar" id="cstop1" title="Color Stop"></div>
+                <div class="sliderBar" id="cstop2" title="Color Stop"></div>
+                <div class="sliderBar" id="cstop3" title="Color Stop"></div>
+            </div>
+
+            <h4>Hover Color Stop</h4>
+            <div class="hov">
+                <div class="sliderBar" id="cstop12" title="Color Stop"></div>
+                <div class="sliderBar" id="cstop22" title="Color Stop"></div>
+                <div class="sliderBar" id="cstop32" title="Color Stop"></div>
+            </div>
+
+            <h4>Custom Gradient Orientation</h4>
+            <div id="custom-gradient">
+                <input type="radio" name="orientation" checked="checked" value="top" rel="0" />Top<br />
+                <input type="radio" name="orientation" value="right" rel="1" />Right<br />
+                <input type="radio" name="orientation" value="bottom" rel="0" />Bottom<br />
+                <input type="radio" name="orientation" value="left" rel="1" />Left<br />
+                <input type="checkbox" name="customorient" /><strong>Custom Orientation</strong>
+                <div class="sliderBar" id="custom" style="display:none;"></div>
+            </div>
+
+        </div>
+
+        <pre id="kode-css"></pre> 
+
+        <div id="howto">
+            <div style="text-align:center;margin-bottom:10px;"><img src="css/images/dte-darkblue.png" alt="meee" /></div>
+            <h2>Portable CSS3 Button Generator :: About Second Revision</h2>
+            Do whatever you can do on this tool. Click on the "Generate CSS" button to get the CSS Code. Put on your template stylesheet. Calling the CSS can be done by writing the HTML code wherever you want like this:
+
+            <pre><code>&lt;a class="button" href="#"&gt;Button Name&lt;/a&gt;</code></pre>
+
+            or like this:
+
+            <pre><code>&lt;button class="button"&gt;Button Name&lt;/button&gt;</code></pre>
+
+            or like this:
+
+            <pre><code>&lt;span class="button"&gt;Button Name&lt;/span&gt;</code></pre>
+
+            or like this:
+
+            <pre><code>&lt;input type="button" class="button" value="Button Name" /&gt;</code></pre>
+
+        </div>
+
+    </div>
+
+    <div class="author">Update: 5 March 2012 by <a href="https://plus.google.com/108949996304093815163/about">Taufik Nurrohman</a></div>
+
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style">
+<a class="addthis_counter addthis_pill_style"></a>
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4dfacea85b106d59"></script>
+<!-- AddThis Button END -->
+
+</body>
+
+</html>
