@@ -1,0 +1,65 @@
+#jimp {
+  display:none;
+  position:fixed !important;
+  position:absolute;
+  background-image:none;
+  background-color:white;
+  padding:0;
+  border:7px solid #000;
+  -webkit-box-shadow:0 1px 5px rgba(0,0,0,0.4);
+  -moz-box-shadow:0 1px 5px rgba(0,0,0,0.4);
+  box-shadow:0 1px 5px rgba(0,0,0,0.4);
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  font:normal normal 10px Tahoma,Verdana,Arial,Sans-Serif;
+  overflow:hidden;
+  z-index:999;
+}
+
+#jimp.loading {
+  background:white url('loading.gif') no-repeat 50% 50%;
+}
+
+#jimp .anchor {
+  position:absolute;
+  bottom:0;
+  right:1px;
+  overflow:hidden;
+  display:none;
+}
+
+#jimp .anchor a {
+  display:block;
+  float:left;
+  font:normal normal 10px Tahoma,Verdana,Arial,Sans-Serif;
+  color:white;
+  text-decoration:none;
+  background-color:black;
+  padding:1px 5px 2px;
+  margin:0 1px;
+}
+
+#jimp:hover .anchor {
+  display:block;
+}
+
+#jimp a:hover {
+  background-color:#CC000B;
+}
+
+#jimp img {
+  display:block;
+}
+
+#jimp h4 {
+  font:italic normal 18px Georgia,Serif;
+  color:white;
+  text-shadow:0 1px 3px black;
+  position:absolute;
+  top:10px;
+  left:10px;
+  right:10px;
+  padding:0;
+  margin:0;
+}
