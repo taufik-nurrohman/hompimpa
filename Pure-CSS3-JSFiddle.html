@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pure CSS3 JsFiddle</title>
+<style type="text/css">
+
+/**
+ * PLEASE DON'T USE THIS FOR SOMETHING EVIL!
+ * Taufik Nurrohman from http://hompimpaalaihumgambreng.blogspot.com
+ */
+
+* {
+  margin:0 0 0 0;
+  padding:0 0 0 0;
+}
+
+body {
+  background:#ccc;
+  font:normal 11px Arial,Sans-Serif;
+  color:#262626;
+}
+
+#outer {
+  width:1342px;
+  background:#F1F1F2;
+  margin:0px auto 0px;
+}
+
+#jsfiddle {
+  width:100%;
+  height:auto;
+  background:#4C7FA9;
+  background:-webkit-linear-gradient(top,#42789B,#2C6080);
+  background:-moz-linear-gradient(top,#42789B,#2C6080);
+  background:-ms-linear-gradient(top,#42789B,#2C6080);
+  background:-o-linear-gradient(top,#42789B,#2C6080);
+  background:linear-gradient(top,#42789B,#2C6080);
+  border-top:1px solid #4D80AA;
+  border-bottom:1px solid #254562;
+  padding:7px 0;
+}
+
+#logo {
+  width:230px;
+  float:left;
+  color:#0D253B;
+  margin-top:7px;
+  position:relative;
+  text-align:left;
+}
+
+#logo h2 {
+  color:#fff;
+  font:bold 16px Arial,Sans-Serif;
+  position:relative;
+  width:122px;
+  margin-left:55px;
+}
+
+#logo h2 span {
+  color:#0D253B;
+  font-size:11px;
+  position:absolute;
+  right:0px;
+  bottom:0px;
+}
+
+#logo .cloud1 {
+  width:35px;
+  height:14px;
+  background:#fff;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+  position:absolute;
+  bottom:0px;
+  left:10px;
+  -webkit-box-shadow:0px 1px 0px #000;
+  -moz-box-shadow:0px 1px 0px #000;
+  box-shadow:0px 1px 0px #000;
+}
+
+#logo .cloud2 {
+  width:20px;
+  height:20px;
+  background:#fff;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+  position:absolute;
+  top:-4px;
+  left:20px;
+}
+
+#logo .cloud3 {
+  width:10px;
+  height:10px;
+  background:#fff;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+  position:absolute;
+  top:0px;
+  left:13px;
+}
+
+#logo .unlimit1 {
+  border:2px solid #40709A;
+  width:6px;
+  height:6px;
+  -webkit-border-radius:10px 0px 10px 10px;
+  -moz-border-radius:10px 0px 10px 10px;
+  border-radius:10px 0px 10px 10px;
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  -o-transform:rotate(45deg);
+  transform:rotate(45deg);
+  position:absolute;
+  bottom:4px;
+  left:18px;
+}
+
+#logo .unlimit2 {
+  border:2px solid #40709A;
+  width:6px;
+  height:6px;
+  -webkit-border-radius:0px 10px 10px 10px;
+  -moz-border-radius:0px 10px 10px 10px;
+  border-radius:0px 10px 10px 10px;
+  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(-45deg);
+  -ms-transform:rotate(-45deg);
+  -o-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+  position:absolute;
+  bottom:4px;
+  left:28px;
+}
+
+#jsfiddle ul {
+  font:bold 12px Arial,Sans-Serif;
+  color:#fff;
+  overflow:auto;
+  float:left;
+  border-left:1px solid #1B3954;
+  width:700px;
+}
+
+#jsfiddle li {
+  display:inline;
+  float:left;
+  list-style:none;
+  overflow:hidden;
+}
+
+#jsfiddle li a {
+  display:block;
+  background:#4C7FA9;
+  background:-webkit-linear-gradient(top,#4C7FA9,#396C96);
+  background:-moz-linear-gradient(top,#4C7FA9,#396C96);
+  background:-ms-linear-gradient(top,#4C7FA9,#396C96);
+  background:-o-linear-gradient(top,#4C7FA9,#396C96);
+  background:linear-gradient(top,#4C7FA9,#396C96);
+  color:#fff;
+  text-decoration:none;
+  border:1px solid #1B3954;
+  margin-left:-1px;
+  -webkit-box-shadow:inset 0px 1px 0px #6B97C8;
+  -moz-box-shadow:inset 0px 1px 0px #6B97C8;
+  box-shadow:inset 0px 1px 0px #6B97C8;
+  text-shadow:0px 1px 0px #294D70;
+  padding:7px 10px 6px;
+  position:relative;
+}
+
+#jsfiddle li a:active {
+  background:-webkit-linear-gradient(top,#376690,#2E5A82);
+  background:-moz-linear-gradient(top,#376690,#2E5A82);
+  background:-ms-linear-gradient(top,#376690,#2E5A82);
+  background:-o-linear-gradient(top,#376690,#2E5A82);
+  background:linear-gradient(top,#376690,#2E5A82);
+  -webkit-box-shadow:inset 0px 1px 0px #4D80AA;
+  -moz-box-shadow:inset 0px 1px 0px #4D80AA;
+  box-shadow:inset 0px 1px 0px #4D80AA;
+}
+
+#jsfiddle li a.run {
+  padding-right:40px;
+  padding-left:30px;
+}
+
+#jsfiddle li a.run div.line {
+  height:100%;
+  width:28px;
+  border-left:1px solid #1B3954;
+  position:absolute;
+  top:0px;
+  right:0px;
+}
+
+#jsfiddle li a.run div.box.left .arrow {
+  width:0px;
+  height:0px;
+  border-width:4px 6px;
+  border-style:solid;
+  border-color:transparent transparent transparent #fff;
+  position:absolute;
+  top:2px;
+  left:4px;
+}
+
+#jsfiddle li a.run div.box .signal {
+  width:0px;
+  height:0px;
+  border-width:7px 6px;
+  border-style:solid;
+  border-color:#fff transparent transparent transparent;
+  position:absolute;
+  top:3px;
+  left:0px;
+  border-radius:20px;
+}
+
+#jsfiddle li a.run div.box .signal:before {
+  content:"";
+  width:6px;
+  height:5px;
+  border-top:1px solid #2D5981;
+  position:absolute;
+  top:-6px;
+  left:-3px;
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+  border-radius:20px;
+}
+
+#jsfiddle li a.update,#jsfiddle li a.fork,#jsfiddle li a.reset,#jsfiddle li a.tidyUp,#jsfiddle li a.JSLint,#jsfiddle li a.base {
+  padding-left:30px;
+}
+
+#jsfiddle li a.update div.box.left .circ {
+  width:6px;
+  height:6px;
+  background:#fff;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+  position:absolute;
+  top:3px;
+  left:3px;
+}
+
+#jsfiddle li a.fork div.box.left .pencil {
+  width:6px;
+  height:0px;
+  border-bottom:2px solid #fff;
+  position:absolute;
+  top:4px;
+  left:4px;
+  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(-45deg);
+  -ms-transform:rotate(-45deg);
+  -o-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+}
+
+#jsfiddle li a.fork div.box.left .pencil:before {
+  content:"";
+  width:2px;
+  height:2px;
+  background:#fff;
+  position:absolute;
+  right:100%;
+  top:0px;
+  margin-right:1px;
+}
+
+#jsfiddle li a.reset div.box.left b {
+  line-height:10px;
+  position:absolute;
+  left:2px;
+  top:1px;
+  font-size:14px;
+}
+
+#jsfiddle li a.share {
+  padding-right:30px;
+}
+
+#jsfiddle li a.share .dropdown {
+  height:100%;
+  width:20px;
+  background:-webkit-linear-gradient(top,#376690,#2E5A82);
+  background:-moz-linear-gradient(top,#376690,#2E5A82);
+  background:-ms-linear-gradient(top,#376690,#2E5A82);
+  background:-o-linear-gradient(top,#376690,#2E5A82);
+  background:linear-gradient(top,#376690,#2E5A82);
+  position:absolute;
+  top:0px;
+  right:0px;
+  -webkit-box-shadow:inset 0px 1px 0px #4D80AA;
+  -moz-box-shadow:inset 0px 1px 0px #4D80AA;
+  box-shadow:inset 0px 1px 0px #4D80AA;
+}
+
+#jsfiddle li a.share .dropdown:after {
+  content:"";
+  width:0px;
+  height:0px;
+  border-width:5px;
+  border-style:solid;
+  border-color:#fff transparent transparent transparent;
+  position:absolute;
+  top:12px;
+  left:100%;
+  margin-left:-15px;
+}
+
+#jsfiddle .drop-white {
+  position:absolute;
+  margin-left:-150px;
+  background:rgba(0,0,0,0.3);
+  z-index:1000;
+  padding:5px;
+  -webkit-transition:all 0.4s ease-out;
+  -moz-transition:all 0.4s ease-out;
+  -ms-transition:all 0.4s ease-out;
+  -o-transition:all 0.4s ease-out;
+  transition:all 0.4s ease-out;
+  visibility:hidden;
+  height:0px;
+  opacity:0;
+  overflow:hidden;
+}
+
+#jsfiddle .drop-white .inner {
+  width:200px;
+  height:200px;
+  background:#fff;
+  padding:8px;
+  color:#000;
+  font:normal 9px Arial,Sans-Serif;
+  text-shadow:none;
+}
+
+#jsfiddle .drop-white .inner input {
+  display:block;
+  border:1px solid #ADADAD;
+  padding:5px;
+  background:#fff;
+  font:normal 11px Tahoma,Arial,Sans-Serif;
+  color:#565656;
+  width:184px;
+  margin:5px 0px;
+}
+
+#jsfiddle .drop-white .inner input:focus {border-color:#999;}
+
+#jsfiddle li:hover .drop-white {
+  visibility:visible;
+  height:216px;
+  opacity:1;
+}
+
+#jsfiddle li a.JSLint div.box.left .check {
+  border:2px solid #fff;
+  border-top:none;
+  border-left:none;
+  width:3px;
+  height:6px;
+  -webkit-transform:rotate(35deg) translate(3px,-1px);
+  -moz-transform:rotate(35deg) translate(3px,-1px);
+  -ms-transform:rotate(35deg) translate(3px,-1px);
+  -o-transform:rotate(35deg) translate(3px,-1px);
+  transform:rotate(35deg) translate(3px,-1px);
+}
+
+#jsfiddle li a.tidyUp div.box.left .grid {
+  width:5px;
+  height:1px;
+  border-top:1px solid #fff;
+  border-bottom:1px solid #fff;
+  position:absolute;
+  top:7px;
+  left:2px;
+}
+
+#jsfiddle li a.tidyUp div.box.left .grid:before {
+  content:"";
+  width:8px;
+  height:1px;
+  border-top:1px solid #fff;
+  border-bottom:1px solid #fff;
+  position:absolute;
+  bottom:100%;
+  left:0px;
+  margin-bottom:2px;
+}
+
+#jsfiddle div.gap.right a.user {
+  background:#4C7FA9;
+  background:-webkit-linear-gradient(top,#4C7FA9,#396C96);
+  background:-moz-linear-gradient(top,#4C7FA9,#396C96);
+  background:-ms-linear-gradient(top,#4C7FA9,#396C96);
+  background:-o-linear-gradient(top,#4C7FA9,#396C96);
+  background:linear-gradient(top,#4C7FA9,#396C96);
+  color:#fff;
+  text-decoration:none;
+  border:1px solid #1B3954;
+  margin-left:-1px;
+  margin-right:15px;
+  -webkit-box-shadow:inset 0px 1px 0px #6B97C8;
+  -moz-box-shadow:inset 0px 1px 0px #6B97C8;
+  box-shadow:inset 0px 1px 0px #6B97C8;
+  text-shadow:0px 1px 0px #294D70;
+  padding:7px 30px 6px 10px;
+  position:relative;
+  float:right;
+  font:bold 12px Arial,Sans-Serif;
+}
+
+#jsfiddle div.gap.right a.user .dropdown {
+  height:100%;
+  width:20px;
+  background:-webkit-linear-gradient(top,#376690,#2E5A82);
+  background:-moz-linear-gradient(top,#376690,#2E5A82);
+  background:-ms-linear-gradient(top,#376690,#2E5A82);
+  background:-o-linear-gradient(top,#376690,#2E5A82);
+  background:linear-gradient(top,#376690,#2E5A82);
+  position:absolute;
+  top:0px;
+  right:0px;
+  -webkit-box-shadow:inset 0px 1px 0px #4D80AA;
+  -moz-box-shadow:inset 0px 1px 0px #4D80AA;
+  box-shadow:inset 0px 1px 0px #4D80AA;
+}
+
+#jsfiddle div.gap.right a.user .dropdown:after {
+  content:"";
+  width:0px;
+  height:0px;
+  border-width:5px;
+  border-style:solid;
+  border-color:#fff transparent transparent transparent;
+  position:absolute;
+  top:12px;
+  left:100%;
+  margin-left:-15px;
+}
+
+div.box {
+  height:12px;
+  width:12px;
+  background:#2D5981;
+  border:1px solid #1B3954;
+  position:absolute;
+  top:7px;
+  right:7px;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+  color:#fff;
+}
+
+div.box.left {
+  right:auto;
+  left:7px;
+}
+
+div.box.green {
+  background:#B2D958;
+  font-size:10px;
+}
+
+div.box.green b {
+  position:relative;
+  left:2px;
+  top:-1px;
+  line-height:4px;
+  text-shadow:0px 0px 1px #fff;
+}
+
+#jsfiddle li.gap {
+  margin-left:10px;
+  border-left:1px solid #1B3954;
+}
+
+#sidebar {
+  width:220px;
+  height:703px;
+  float:left;
+  background:#fff;
+  margin-top:3px;
+}
+
+#sidebar li {
+  list-style:none;
+}
+
+#sidebar li a {
+  font-size:12px;
+  padding:10px 10px;
+  border-top:1px solid #D9D9D9;
+  display:block;
+  text-decoration:none;
+  color:#7E7E7E;
+  position:relative;
+}
+
+#sidebar li a:after {
+  content:"";
+  width:0px;
+  height:0px;
+  border-width:4px 7px;
+  border-style:solid;
+  border-color:transparent transparent transparent #808080;
+  position:absolute;
+  left:100%;
+  margin:4px 0px 0px -20px;
+}
+
+#sidebar li a.active {
+  border-top:none;
+  color:#2a2a2a;
+}
+
+#sidebar li a.active:after {
+  content:"";
+  width:0px;
+  height:0px;
+  border-width:7px 4px;
+  border-style:solid;
+  border-color:#808080 transparent transparent transparent;
+  position:absolute;
+  left:100%;
+  margin:4px 0px 0px -20px;
+}
+
+#sidebar .panel {
+  margin:0px 10px;
+  position:relative;
+}
+
+#sidebar #acc1 {
+  padding:10px 0px;
+  height:200px;
+  -webkit-animation:slidedown 0.5s;
+  -moz-animation:slidedown 0.5s;
+  -ms-animation:slidedown 0.5s;
+  -o-animation:slidedown 0.5s;
+  animation:slidedown 0.5s;
+}
+
+#sidebar #acc1 select {
+  width:100%;
+  padding:2px;
+  margin-bottom:6px;
+  border:1px solid #7C9AB5;
+}
+
+#sidebar #acc1 input[type="checkbox"] {
+  margin:3px 3px 3px 0px;
+}
+
+#sidebar #acc1 p {
+  margin:12px 0px;
+}
+
+#sidebar #acc1 input#css3 {
+  border:1px solid #CFCFCF;
+  padding:5px 5px;
+  font:normal 12px Arial,Sans-Serif;
+  -webkit-box-shadow:inset 0px 2px 3px #eee;
+  -moz-box-shadow:inset 0px 2px 3px #eee;
+  box-shadow:inset 0px 2px 3px #eee;
+  width:94.5%;
+  margin:2px 0px 10px;
+}
+
+#sidebar #acc1 input#css3:focus {border-color:#bbb;}
+
+#sidebar .panel.last {
+  color:#7E7E7E;
+  height:210px;
+  margin-top:20px;
+}
+
+#sidebar .panel #absol {
+  position:absolute;
+  bottom:0px;
+  left:0px;
+  padding:10px;
+}
+
+#sidebar .panel #absol .huh {
+  width:80px;
+  font-size:9px;
+  font-weight:bold;
+  padding:1px 10px;
+  border:1px solid #ABABAB;
+  border-radius:3px;
+  display:inline;
+  margin-right:7px;
+  -webkit-box-shadow:4px 4px 0px #EFEFF0,-4px -4px 0px #EFEFF0,4px -4px 0px #EFEFF0,-4px 4px 0px #EFEFF0;
+  -moz-box-shadow:4px 4px 0px #EFEFF0,-4px -4px 0px #EFEFF0,4px -4px 0px #EFEFF0,-4px 4px 0px #EFEFF0;
+  box-shadow:4px 4px 0px #EFEFF0,-4px -4px 0px #EFEFF0,4px -4px 0px #EFEFF0,-4px 4px 0px #EFEFF0;
+}
+
+#workspace {
+  float:right;
+  position:relative;
+  width:1122px;
+  height:100%;
+}
+
+#workspace .left-side {
+  float:left;
+  width:50%;
+  position:relative;
+}
+
+#workspace .right-side {
+  float:right;
+  width:50%;
+}
+
+#workspace .left-side:after {
+  content:"";
+  width:1px;
+  height:15px;
+  border-left:1px solid #CECECE;
+  border-right:1px solid #CECECE;
+  position:absolute;
+  top:45%;
+  right:3px;
+  -webkit-box-shadow:inset 1px 0px 0px #fff,1px 0px 0px #fff;
+  -moz-box-shadow:inset 1px 0px 0px #fff,1px 0px 0px #fff;
+  box-shadow:inset 1px 0px 0px #fff,1px 0px 0px #fff;
+}
+
+#workspace .space {
+  overflow:auto;
+  border:1px solid #ADADAD;
+  padding:5px;
+  -webkit-box-shadow:inset 0px 0px 3px rgba(0,0,0,0.1);
+  -moz-box-shadow:inset 0px 0px 3px rgba(0,0,0,0.1);
+  box-shadow:inset 0px 0px 3px rgba(0,0,0,0.1);
+  background:#fff;
+  margin:8px 8px;
+  position:relative;
+  font-family:"Consolas","Bitstream Vera Sans Mono","Courier New",Courier,monospace;
+  font-weight:normal;
+  font-style:normal;
+  font-size:small;
+  cursor:text;
+}
+
+#workspace .space:after {
+  content:attr(data-name);
+  background:#fff;
+  padding:4px 7px;
+  background:#fff;
+  border:1px solid #E0E1E1;
+  color:#9E9E9E;
+  position:absolute;
+  top:7px;
+  right:7px;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+  -webkit-transition:all 0.4s ease-out;
+  -moz-transition:all 0.4s ease-out;
+  -ms-transition:all 0.4s ease-out;
+  -o-transition:all 0.4s ease-out;
+  transition:all 0.4s ease-out;
+  font:normal 11px Arial,Sans-Serif;
+  visibility:visible;
+  opacity:1;
+}
+
+#workspace .space:hover:after {
+  visibility:hidden;
+  opacity:0;
+}
+
+#workspace #html {
+  height:300px;
+}
+
+#workspace #JavaScript {
+  height:365px;
+}
+
+#workspace #CSS {
+  height:200px;
+  margin-left:0px;
+}
+
+#workspace #Result {
+  height:475px;
+  margin-left:0px;
+  font:normal 16px Times,Serif;
+  padding:0px;
+  cursor:default;
+}
+
+#workspace #Result p {
+  margin:10px 0px;
+}
+
+#workspace #Result a {
+  color:#0000FF;
+  text-decoration:underline;
+}
+
+#workspace .left-side:before,#workspace .right-side:before {
+  content:"";
+  width:15px;
+  height:1px;
+  border-top:1px solid #CECECE;
+  border-bottom:1px solid #CECECE;
+  position:absolute;
+  top:323px;
+  left:48%;
+  z-index:10;
+  margin-bottom:2px;
+  -webkit-box-shadow:inset 0px 1px 0px #fff,0px 1px 0px #fff;
+  -moz-box-shadow:inset 0px 1px 0px #fff,0px 1px 0px #fff;
+  box-shadow:inset 0px 1px 0px #fff,0px 1px 0px #fff;
+}
+
+#workspace .right-side:before {
+  top:222px;
+  left:74.5%;
+}
+
+.clear {
+  clear:both;
+}
+
+@-webkit-keyframes slidedown{
+from{opacity:0;height:0px;}
+to{opacity:1;height:200px;}
+}
+@-moz-keyframes slidedown{
+from{opacity:0;height:0px;}
+to{opacity:1;height:200px;}
+}
+@-ms-keyframes slidedown{
+from{opacity:0;height:0px;}
+to{opacity:1;height:200px;}
+}
+@-o-keyframes slidedown{
+from{opacity:0;height:0px;}
+to{opacity:1;height:200px;}
+}
+@keyframes slidedown{
+from{opacity:0;height:0px;}
+to{opacity:1;height:200px;}
+}
+
+
+</style>
+  
+
+
+</head>
+<body oncontextmenu="return false;">
+
+<div id="outer">
+
+<div id="jsfiddle">
+<div id="logo">
+<div class="cloud1"></div>
+<div class="cloud2"></div>
+<div class="cloud3"></div>
+<div class="unlimit1"></div>
+<div class="unlimit2"></div>
+<h2>JSFIDDLE<span>ALPHA</span></h2>
+</div>
+
+
+
+<ul>
+	<li>
+	<a href="" class="run">
+	<div class="box left">
+		<div class="arrow"></div>
+	</div>
+	Run
+	<div class="line"></div>
+	<div class="box">
+		<div class="signal"></div>
+	</div>
+	</a>
+	</li>
+
+	<li class="gap">
+	<a href="" class="update">
+	<div class="box left">
+		<div class="circ"></div>
+	</div>
+	Update
+	</a>
+	</li>
+
+	<li>
+	<a href="" class="fork">
+	<div class="box left">
+		<div class="pencil"></div>
+	</div>
+	Fork
+	</a>
+	</li>
+
+	<li>
+	<a href="" class="reset">
+	<div class="box left">
+		<b>&times;</b>
+	</div>
+	Reset
+	</a>
+	</li>
+
+	<li>
+	<a href="" class="base">
+	<div class="box left green"><b>&#10029;</b></div>
+	Base
+	</a>
+	</li>
+
+	<li class="gap">
+	<a href="" class="tidyUp">
+	<div class="box left">
+		<div class="grid"></div>
+	</div>
+	TidyUp
+	</a>
+	</li>
+
+	<li>
+	<a href="" class="JSLint">
+	<div class="box left">
+		<div class="check"></div>
+	</div>
+	JSLint
+	</a>
+	</li>
+
+	<li class="gap">
+	<a href="" class="share">
+	Share
+	<div class="dropdown">
+	</div>
+	</a>
+		<div class="drop-white">
+			<div class="inner">
+				Share link
+				<input type="text" value="http://hompimpaalaihumgambreng.blogspot.com" />
+				Share full screen result
+				<input type="text" value="http://hompimpaalaihumgambreng.blogspot.com" />
+				Embed on your page
+				<input type="text" value="&lt;iframe style=&quot;width: 100%; height: 300px;&quot; src=&quot;http://hompimpaalaihumgambreng.blogspot.com&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;" />
+			</div>
+		</div>
+	</li>
+
+</ul>
+
+	<div class="gap right">
+	<a href="" class="user">
+	Taufik
+	<div class="dropdown">
+	</div>
+	</a>
+	</div>
+
+
+<div class="clear"></div>
+</div>
+
+<div id="container">
+
+	<div id="sidebar">
+		<ul>
+			<li>
+				<a href="#acc1" class="active">Choose Framework</a>
+				<div id="acc1" class="panel">
+				<select>
+					<option>no wrap (head)</option>
+					<option>no wrap (body)</option>
+					<option>onDomReady</option>
+					<option>onLoad</option>
+				</select>
+				<select>
+					<option>jQuery 1.7.1</option>
+					<option>jQuery 1.7</option>
+					<option>jQuery 1.6.4</option>
+					<option>jQuery 1.5.2</option>
+					<option>jQuery 1.4.4</option>
+					<option>jQuery 1.3.2</option>
+					<option>Other...</option>
+				</select>
+				<input type="checkbox" id="one" /><label for="one">jQuery UI 1.8.16</label>
+				<br />
+				<input type="checkbox" id="two" /><label for="two">jQuery Lint (June 2011)</label>
+				<p>
+				Library tag attributes <span style="color:#58A2D4;text-decoration:none;cursor:pointer;">(?)</span>
+				<input type="text" id="css3" />
+				<input type="checkbox" id="css-n" checked="checked" /><label for="css-n">Normalized CSS</label>
+				</p>
+				</div>
+			</li>
+			<li>
+				<a href="#acc2">Panels</a>
+				<div class="panel">
+
+				</div>
+			</li>
+			<li>
+				<a href="#acc3">Add Resources</a>
+				<div class="panel">
+
+				</div>
+			</li>
+			<li>
+				<a href="#acc4">Info</a>
+				<div class="panel">
+
+				</div>
+			</li>
+			<li>
+				<a href="#acc5">Testing Ajax request</a>
+				<div class="panel">
+
+				</div>
+			</li>
+			<li>
+				<a href="#acc5">Examples</a>
+				<div class="panel">
+
+				</div>
+			</li>
+			<li>
+				<a href="#acc5">Legal stuff and credits</a>
+				<div class="panel last">
+				Read our <span style="color:#58A2D4;text-decoration:none;cursor:pointer;">documentation</span>
+				<div id="absol"><div class="huh">?</div> <span style="color:#58A2D4;text-decoration:none;cursor:pointer;">Keyboard shortcuts</span></div>
+				</div>
+			</li>
+		</ul>
+	</div> <!-- sidebar -->
+
+
+	<div id="workspace">
+
+		<div class="left-side">
+			<div id="html" class="space" data-name="HTML">
+&lt;<span style="color:#A600B6;">div</span> <span style="color:#1500FC;">id</span>=<span style="color:#1A8313;">"copyright"</span>&gt;<br />
+&emsp;&lt;<span style="color:#A600B6;">h1</span> <span style="color:#1500FC;">class</span>=<span style="color:#1A8313;">"hompimpa"</span>&gt;JSFIDDLE.net&lt;/<span style="color:#A600B6;">h1</span>&gt;<br />
+&emsp;&emsp;&lt;<span style="color:#A600B6;">p</span> <span style="color:#1500FC;">id</span>=<span style="color:#1A8313;">"alert"</span>&gt;<br />
+&emsp;&emsp;For safety reason, these experiments are not allowed to download.<br />
+&emsp;&emsp;&lt;/<span style="color:#A600B6;">p</span>&gt;
+
+<br /><br />
+&emsp;&lt;<span style="color:#A600B6;">ul</span>&gt;<br />
+&emsp;&emsp;&lt;<span style="color:#A600B6;">li</span>&gt;Author: Taufik Nurrrohman&lt;/<span style="color:#A600B6;">li</span>&gt;<br />
+&emsp;&emsp;&lt;<span style="color:#A600B6;">li</span>&gt;Date: 24 December 2011&lt;/<span style="color:#A600B6;">li</span>&gt;<br />
+&emsp;&emsp;&lt;<span style="color:#A600B6;">li</span>&gt;Visit: &lt;<span style="color:#A600B6;">a</span> <span style="color:#1500FC;">href</span>=<span style="color:#1A8313;">"http://hompimpaalaihumgambreng.blogspot.com"</span>&gt;Hompimpa Alaihum Gambreng&lt;/<span style="color:#A600B6;">a</span>&gt;&lt;/<span style="color:#A600B6;">li</span>&gt;<br />
+&emsp;&lt;<span style="color:#A600B6;">ul</span>&gt;<br /><br />
+&lt;/<span style="color:#A600B6;">div</span>&gt;
+
+
+			</div>
+			<div id="JavaScript" class="space" data-name="JavaScript">
+			</div>
+		</div>
+
+		<div class="right-side">
+			<div id="CSS" class="space" data-name="CSS">
+
+#copyright {<br />
+&emsp;width: <span style="color:#1A8313;">100%</span>;<br />
+&emsp;height: <span style="color:#1A8313;">800px</span>;<br />
+&emsp;background: <span style="color:#1500FC;">#ffa500</span>;<br />
+&emsp;padding: <span style="color:#1A8313;">15px</span>;<br />
+}<br /><br />
+
+#copyright h1 {<br />
+&emsp;font-size: <span style="color:#1A8313;">30px</span>;<br />
+&emsp;color: <span style="color:#A600B6;">black</span>;<br />
+}<br /><br />
+
+p#alert { color: <span style="color:#A600B6;">red</span>; }
+
+			</div>
+			<div id="Result" class="space" data-name="Result">
+
+				<div style="background:#ffa500;width:100%;height:800px;padding:15px;">
+					<h1 style="font:bold 30px Times,Serif;">JSFIDDLE.net</h1>
+					<p style="color:red;">
+For safety reason, these experiments are not allowed to download.
+					</p>
+					<ul>
+						<li>Author: Taufik Nurrohmman</li>
+						<li>Date: 24 December 2011</li>
+						<li>Visit: <a href="http://hompimpaalaihumgambreng.blogspot.com" class="kecuali">Hompimpa Alaihum gambreng</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+		<div class="clear"></div>
+
+
+
+	</div> <!-- workspace -->
+	<div class="clear"></div>
+
+</div> <!-- container -->
+
+</div> <!-- outer -->
+
+
+
+
+</body>
+</html>
