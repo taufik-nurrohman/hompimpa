@@ -1,0 +1,36 @@
+/* Soundcloud */
+.soundcloud span {
+  display:block;
+  top:35px;
+  right:10px;
+  bottom:25px;
+  left:10px;
+  background-color:white;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+}
+
+.soundcloud span:before {
+  content:"";
+  width:25px;
+  height:20px;
+  background-color:white;
+  -webkit-border-radius:20px 20px 0px 0px;
+  -moz-border-radius:20px 20px 0px 0px;
+  border-radius:20px 20px 0px 0px;
+  top:-10px;
+  right:6px;
+}
+
+.soundcloud span:after {
+  content:"";
+  width:16px;
+  height:16px;
+  background-color:white;
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+  border-radius:20px;
+  top:-7px;
+  left:8px;
+}

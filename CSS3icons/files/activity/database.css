@@ -1,0 +1,29 @@
+/* Database */
+.database div {
+  height:15px;
+  top:28px;
+  right:12px;
+  left:12px;
+  background-color:white;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+}
+
+.database div:before,
+.database div:after {
+  content:"";
+  width:100%;
+  height:15px;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+  background-color:white;
+  top:-17px;
+  left:0px;
+}
+
+.database div:after {
+  top:auto;
+  bottom:-17px;
+}

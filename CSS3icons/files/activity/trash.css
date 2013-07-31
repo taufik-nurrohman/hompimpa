@@ -1,0 +1,57 @@
+/* Trash */
+.trash div {
+  background-color:white;
+  top:15px;
+  right:20px;
+  bottom:15px;
+  left:20px;
+  -webkit-box-shadow:
+    inset 4px 0px 0px white,
+    inset 6px 0px 0px black,
+    inset -4px 0px 0px white,
+    inset -6px 0px 0px black,
+    inset 10px 0px 0px white,
+    inset 12px 0px 0px black,
+    inset -10px 0px 0px white,
+    inset -12px 0px 0px black;
+  -moz-box-shadow:
+    inset 4px 0px 0px white,
+    inset 6px 0px 0px black,
+    inset -4px 0px 0px white,
+    inset -6px 0px 0px black,
+    inset 10px 0px 0px white,
+    inset 12px 0px 0px black,
+    inset -10px 0px 0px white,
+    inset -12px 0px 0px black;
+  box-shadow:
+    inset 4px 0px 0px white,
+    inset 6px 0px 0px black,
+    inset -4px 0px 0px white,
+    inset -6px 0px 0px black,
+    inset 10px 0px 0px white,
+    inset 12px 0px 0px black,
+    inset -10px 0px 0px white,
+    inset -12px 0px 0px black;
+  border-bottom:7px solid white;
+  -webkit-border-radius:0px 0px 2px 2px;
+  -moz-border-radius:0px 0px 2px 2px;
+  border-radius:0px 0px 2px 2px;
+}
+
+.trash div:before,
+.trash div:after {
+  content:"";
+  width:10px;
+  height:4px;
+  background-color:white;
+  left:10px;
+  top:-2px;
+}
+
+.trash div:after {
+  width:auto;
+  top:0px;
+  right:0px;
+  left:0px;
+  box-shadow:1px 0px 0px white,-1px 0px 0px white;
+}

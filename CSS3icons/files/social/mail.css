@@ -1,0 +1,47 @@
+/* Mail */
+.mail .square {
+  width:48px;
+  height:30px;
+  border:2px solid white;
+  top:18px;
+  left:9px;
+}
+
+.mail .arrow {
+  width:35px;
+  height:35px;
+  border:1px solid white;
+  border-width:0px 1px 1px 0px;
+  -webkit-transform:rotate(45deg) translate(-8px,-16px);
+  -moz-transform:rotate(45deg) translate(-8px,-16px);
+  -ms-transform:rotate(45deg) translate(-8px,-16px);
+  -o-transform:rotate(45deg) translate(-8px,-16px);
+  transform:rotate(45deg) translate(-8px,-16px);
+}
+
+.mail .square:before,
+.mail .square:after {
+  content:"";
+  width:0px;
+  height:18px;
+  border-left:1px solid white;
+  top:11px;
+}
+
+.mail .square:before {
+  left:5px;
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  -o-transform:rotate(45deg);
+  transform:rotate(45deg);
+}
+
+.mail .square:after {
+  right:5px;
+  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(-45deg);
+  -ms-transform:rotate(-45deg);
+  -o-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+}

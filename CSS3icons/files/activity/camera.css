@@ -1,0 +1,33 @@
+/* Camera */
+.camera div {
+  width:40px;
+  height:25px;
+  background-color:white;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+  top:25px;
+  left:15px;
+}
+
+.camera div:before {
+  content:"";
+  width:10px;
+  height:10px;
+  border:3px solid black;
+  -webkit-border-radius:100%;
+  -moz-border-radius:100%;
+  border-radius:100%;
+  top:5px;
+  left:12px;
+}
+
+.camera div:after {
+  content:"";
+  width:10px;
+  height:0px;
+  border:4px solid transparent;
+  border-bottom-color:white;
+  bottom:100%;
+  left:11px;
+}

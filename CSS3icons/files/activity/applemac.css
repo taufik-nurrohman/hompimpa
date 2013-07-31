@@ -1,0 +1,136 @@
+/* Apple Mac Logo
+ * Via http://jsfiddle.net/bPw4r/
+ */
+.applemac {
+  overflow:hidden;
+}
+
+.apple,
+.apple .butt:before,
+.apple .top span:after,
+.apple .butt:after,
+.apple .top:before,
+.apple .top:after,
+.apple .butt:before,
+.apple .butt:after {
+  background-color:white;
+}
+
+.apple .bite,
+.apple .butt span,
+.apple .butt,
+.apple .top,
+.apple .top span {
+  background-color:black;
+}
+
+.apple {
+  width:48px;
+  height:42px;
+  top:18px;
+  left:12px;
+  -webkit-border-radius:36% 36% 41% 41% / 42% 42% 75% 75%;
+  -moz-border-radius:36% 36% 41% 41% / 42% 42% 75% 75%;
+  border-radius:36% 36% 41% 41% / 42% 42% 75% 75%;
+}
+
+.apple .bite {
+  width:30%;
+  height:52%;
+  right:-10%;
+  top:10%;
+  -webkit-border-radius:100% 0% 0% 100%;
+  -moz-border-radius:100% 0% 0% 100%;
+  border-radius:100% 0% 0% 100%;
+}
+
+.apple .butt span {
+  display:block;
+  -webkit-border-radius:100% 100% 0% 0%;
+  -moz-border-radius:100% 100% 0% 0%;
+  border-radius:100% 100% 0% 0%;
+  width:24.5%;
+  height:400%;
+  bottom:-239%;
+  left:38%;
+}
+
+.apple .butt {
+  width:100%;
+  height:4%;
+  bottom:-1%;
+}
+
+.apple .butt:before {
+  content:"";
+  width:24%;
+  height:400%;
+  -webkit-border-radius:0% 0% 100% 100%;
+  -moz-border-radius:0% 0% 100% 100%;
+  border-radius:0% 0% 100% 100%;
+  left:21%;
+  bottom:38%;
+}
+
+.apple .butt:after {
+  content:"";
+  width:23.4%;
+  height:400%;
+  -webkit-border-radius:0% 0% 100% 100%;
+  -moz-border-radius:0% 0% 100% 100%;
+  border-radius:0% 0% 100% 100%;
+  right:21%;
+  bottom:38%;
+}
+
+.apple .top span {
+  display:block;
+  -webkit-border-radius:0 0 44% 44% / 0 0 100% 100%;
+  -moz-border-radius:0 0 44% 44% / 0 0 100% 100%;
+  border-radius:0 0 44% 44% / 0 0 100% 100%;
+  width:63%;
+  height:259%;
+  top:-92%;
+  left:18.6%;
+  z-index:3;
+}
+
+.apple .top span:after {
+  -webkit-border-radius:100% 0 100% 0;
+  -moz-border-radius:100% 0 100% 0;
+  border-radius:100% 0 100% 0;
+  content:"";
+  height:242%;
+  left:41%;
+  top:-193%;
+  width:90%;
+}
+
+.apple .top {
+  width:42%;
+  height:4%;
+  top:0px;
+  left:29%;
+}
+
+.apple .top:before {
+  content:"";
+  width:62%;
+  height:260%;
+  -webkit-border-radius:100% 100% 0% 0% / 100% 200% 0% 0%;
+  -moz-border-radius:100% 100% 0% 0% / 100% 200% 0% 0%;
+  border-radius:100% 100% 0% 0% / 100% 200% 0% 0%;
+  left:-27%;
+  top:1%;
+}
+
+.apple .top:after {
+  content:"";
+  width:62%;
+  height:260%;
+  -webkit-border-radius:100% 100% 0% 0% / 200% 100% 0% 0%;
+  -moz-border-radius:100% 100% 0% 0% / 200% 100% 0% 0%;
+  border-radius:100% 100% 0% 0% / 200% 100% 0% 0%;
+  right:-27%;
+  top:1%;
+}

@@ -1,0 +1,46 @@
+/* Snow */
+.snow span {
+  width:2px;
+  height:30px;
+  background-color:white;
+  top:20px;
+  left:34px;
+}
+
+.snow span:before,
+.snow span:after {
+  content:"";
+  width:6px;
+  height:6px;
+  border:2px solid white;
+  border-width:0px 2px 2px 0px;
+  top:-6px;
+  left:-3px;
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  -o-transform:rotate(45deg);
+  transform:rotate(45deg);
+}
+
+.snow span:after {
+  border-width:2px 0px 0px 2px;
+  top:auto;
+  bottom:-6px;
+}
+
+.snow span:nth-child(2) {
+  -webkit-transform:rotate(60deg);
+  -moz-transform:rotate(60deg);
+  -ms-transform:rotate(60deg);
+  -o-transform:rotate(60deg);
+  transform:rotate(60deg);
+}
+
+.snow span:nth-child(3) {
+  -webkit-transform:rotate(120deg);
+  -moz-transform:rotate(120deg);
+  -ms-transform:rotate(120deg);
+  -o-transform:rotate(120deg);
+  transform:rotate(120deg);
+}

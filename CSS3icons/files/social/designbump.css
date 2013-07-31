@@ -1,0 +1,31 @@
+/* Design Bump */
+.designbump div {
+  background-color:white;
+  top:12px;
+  right:12px;
+  bottom:12px;
+  left:12px;
+  -webkit-border-radius:2px;
+  -moz-border-radius:2px;
+  border-radius:2px;
+}
+
+.designbump div:before {
+  content:"";
+  width:14px;
+  height:30px;
+  background-color:black;
+  bottom:0px;
+  left:16px;
+}
+
+.designbump div:after {
+  content:"";
+  width:0px;
+  height:0px;
+  border:14px solid transparent;
+  border-width:18px 15px;
+  border-bottom-color:black;
+  top:-14px;
+  left:8px;
+}

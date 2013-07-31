@@ -1,0 +1,98 @@
+/* Reddit */
+.reddit .hd {
+  width:46px;
+  height:30px;
+  border:2px solid white;
+  border-radius:100%;
+  bottom:12px;
+  left:10px;
+}
+
+.reddit .hd:before,
+.reddit .hd:after {
+  content:"";
+  width:6px;
+  height:6px;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+  border-radius:6px;
+  background-color:white;
+  top:10px;
+  left:12px;
+}
+
+.reddit .hd:after {
+  left:auto;
+  right:12px;
+}
+
+.reddit span {
+  display:block;
+  width:20px;
+  height:10px;
+  border:2px solid transparent;
+  border-bottom-color:white;
+  -webkit-border-radius:100%;
+  -moz-border-radius:100%;
+  border-radius:100%;
+  bottom:4px;
+  left:11px;
+}
+
+.reddit span:nth-child(2) {
+  top:-12px;
+  left:22px;
+  width:10px;
+  height:10px;
+  border:2px solid white;
+  border-width:2px 0px 0px 2px;
+  -webkit-border-radius:5px 0px 0px 0px;
+  -moz-border-radius:5px 0px 0px 0px;
+  border-radius:5px 0px 0px 0px;
+  -webkit-transform:rotate(10deg);
+  -moz-transform:rotate(10deg);
+  -ms-transform:rotate(10deg);
+  -o-transform:rotate(10deg);
+  transform:rotate(10deg);
+}
+
+.reddit span:nth-child(2):after {
+  content:"";
+  width:8px;
+  height:8px;
+  border:2px solid white;
+  -webkit-border-radius:100%;
+  -moz-border-radius:100%;
+  border-radius:100%;
+  top:-7px;
+  right:-10px;
+}
+
+.reddit span:last-child:before,
+.reddit span:last-child:after {
+  content:"";
+  width:10px;
+  height:6px;
+  border:2px solid white;
+  border-bottom:none;
+  -webkit-border-radius:100px 100px 0px 0px;
+  -moz-border-radius:100px 100px 0px 0px;
+  border-radius:100px 100px 0px 0px;
+  top:-16px;
+  left:-18px;
+  -webkit-transform:rotate(-40deg);
+  -moz-transform:rotate(-40deg);
+  -ms-transform:rotate(-40deg);
+  -o-transform:rotate(-40deg);
+  transform:rotate(-40deg);
+}
+
+.reddit span:last-child:after {
+  left:auto;
+  right:-18px;
+  -webkit-transform:rotate(40deg);
+  -moz-transform:rotate(40deg);
+  -ms-transform:rotate(40deg);
+  -o-transform:rotate(40deg);
+  transform:rotate(40deg);
+}

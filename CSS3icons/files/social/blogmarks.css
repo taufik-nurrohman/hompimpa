@@ -1,0 +1,23 @@
+/* Blogmarks */
+.blogmarks div:before,
+.blogmarks div:after,
+.blogmarks span {
+  display:block;
+  content:"";
+  width:0px;
+  height:4px;
+  border-width:15px 30px;
+  border-style:solid;
+  border-color:transparent transparent transparent white;
+  top:10px;
+  left:20px;
+}
+
+.blogmarks div:after {
+  top:26px;
+}
+
+.blogmarks span {
+  border-left-color:black;
+  top:25px;
+}

@@ -1,0 +1,51 @@
+/* Video */
+.video > span {
+  width:42px;
+  height:30px;
+  background-color:white;
+  box-shadow:
+    inset 2px 0px 0px black,
+    inset 4px 0px 0px white,
+    inset 8px 0px 0px black,
+    inset 10px 0px 0px white,
+    inset 14px 0px 0px black,
+    inset 16px 0px 0px white,
+    inset 20px 0px 0px black,
+    inset -2px 0px 0px black,
+    inset -4px 0px 0px white,
+    inset -8px 0px 0px black,
+    inset -10px 0px 0px white,
+    inset -14px 0px 0px black,
+    inset -16px 0px 0px white,
+    inset -20px 0px 0px black;
+	border-top:1px solid white;
+	border-bottom:1px solid white;
+  top:18px;
+  left:16px;
+  overflow:hidden;
+}
+
+.video span span {
+  top:4px;
+  right:8px;
+  bottom:4px;
+  left:8px;
+  background-color:black;
+  box-shadow:0px 0px 0px 2px white;
+}
+
+.video span span:before,
+.video span span:after {
+  content:"";
+  width:6px;
+  top:0px;
+  bottom:0px;
+  left:-10px;
+  background-color:black;
+  box-shadow:0px 0px 0px 2px white;
+}
+
+.video span span:after {
+  left:auto;
+  right:-10px;
+}

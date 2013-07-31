@@ -1,0 +1,81 @@
+/* Konoha */
+.konoha div,
+.konoha div:before,
+.konoha div:after,
+.konoha div span,
+.konoha div span:after {
+  -webkit-border-radius:100%;
+  -moz-border-radius:100%;
+  border-radius:100%;
+  border:2px solid transparent;
+}
+
+.konoha div {
+  width:30px;
+  height:30px;
+  border-color:white transparent transparent white;
+  top:20px;
+  left:22px;
+}
+
+.konoha > span {
+  width:10px;
+  border-bottom:2px solid white;
+  top:20px;
+  right:12px;
+  -webkit-transform:rotate(-50deg);
+  -moz-transform:rotate(-50deg);
+  -ms-transform:rotate(-50deg);
+  -o-transform:rotate(-50deg);
+  transform:rotate(-50deg);
+}
+
+.konoha > span:after {
+  content:"";
+  width:10px;
+  height:10px;
+  border:2px solid white;
+  border-width:2px 0px 0px 2px;
+  -webkit-transform:rotate(-10deg) skewX(30deg);
+  -moz-transform:rotate(-10deg) skewX(30deg);
+  -ms-transform:rotate(-10deg) skewX(30deg);
+  -o-transform:rotate(-10deg) skewX(30deg);
+  transform:rotate(-10deg) skewX(30deg);
+  bottom:-2px;
+  left:-37px;
+}
+
+.konoha div:before {
+  content:"";
+  width:23px;
+  height:23px;
+  top:3px;
+  left:-2px;
+  border-color:transparent white white transparent;
+}
+
+.konoha div:after {
+  content:"";
+  width:17px;
+  height:17px;
+  border-color:white transparent transparent white;
+  top:5px;
+  left:4px;
+}
+
+.konoha div span {
+  width:11px;
+  height:11px;
+  border-color:transparent white white transparent;
+  top:9px;
+  left:4px;
+}
+
+.konoha div span:after {
+  content:"";
+  width:5px;
+  height:5px;
+  border-color:white transparent transparent white;
+  top:0px;
+  left:4px;
+}

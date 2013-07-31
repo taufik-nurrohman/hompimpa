@@ -1,0 +1,78 @@
+/* Mini Clock */
+.miniclock div {
+  top:15px;
+  right:12px;
+  bottom:10px;
+  left:12px;
+  border:4px solid white;
+  -webkit-border-radius:100%;
+  -moz-border-radius:100%;
+  border-radius:100%;
+}
+
+.miniclock div:before,
+.miniclock div:after {
+  content:"";
+  width:14px;
+  height:7px;
+  background-color:white;
+  -webkit-border-radius:7px 7px 0px 0px;
+  -moz-border-radius:7px 7px 0px 0px;
+  border-radius:7px 7px 0px 0px;
+  top:-2px;
+  left:-6px;
+  -webkit-transform:rotate(-42deg);
+  -moz-transform:rotate(-42deg);
+  -ms-transform:rotate(-42deg);
+  -o-transform:rotate(-42deg);
+  transform:rotate(-42deg);
+}
+
+.miniclock div:after {
+  left:auto;
+  right:-6px;
+  -webkit-transform:rotate(42deg);
+  -moz-transform:rotate(42deg);
+  -ms-transform:rotate(42deg);
+  -o-transform:rotate(42deg);
+  transform:rotate(42deg);
+}
+
+.miniclock span:first-child {
+  display:block;
+  width:14px;
+  height:2px;
+  background-color:white;
+  top:23px;
+  left:7px;
+  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(-45deg);
+  -ms-transform:rotate(-45deg);
+  -o-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+}
+
+.miniclock span:first-child:after {
+  content:"";
+  width:15px;
+  height:2px;
+  background-color:white;
+  bottom:5px;
+  left:11px;
+  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(-45deg);
+  -ms-transform:rotate(-45deg);
+  -o-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+}
+
+.miniclock span:last-child {
+  width:5px;
+  height:5px;
+  top:-10px;
+  left:16px;
+  background-color:white;
+  -webkit-border-radius:3px 3px 0px 0px;
+  -moz-border-radius:3px 3px 0px 0px;
+  border-radius:3px 3px 0px 0px;
+}

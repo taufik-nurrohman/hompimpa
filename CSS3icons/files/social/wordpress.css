@@ -1,0 +1,42 @@
+/* Wordpress */
+.wordpress span {
+  display:block;
+  font:bold 42px Times,Serif;
+  color:black;
+  background-color:white;
+  top:9px;
+  right:9px;
+  bottom:9px;
+  left:9px;
+  -webkit-border-radius:70px;
+  -moz-border-radius:70px;
+  border-radius:70px;
+  -webkit-box-shadow:
+    inset 0px 0px 0px 2px white,
+    inset 0px 0px 0px 4px black;
+  -moz-box-shadow:
+    inset 0px 0px 0px 2px white,
+    inset 0px 0px 0px 4px black;
+  box-shadow:
+    inset 0px 0px 0px 2px white,
+    inset 0px 0px 0px 4px black;
+  line-height:54px;
+  text-align:center;
+}
+
+.wordpress span:after {
+  content:"";
+  width:10px;
+  height:12px;
+  border-right:6px solid black;
+  top:11px;
+  right:6px;
+  -webkit-border-radius:5px 5px 10px 0px;
+  -moz-border-radius:5px 5px 10px 0px;
+  border-radius:5px 5px 10px 0px;
+  -webkit-transform:rotate(-24deg);
+  -moz-transform:rotate(-24deg);
+  -ms-transform:rotate(-24deg);
+  -o-transform:rotate(-24deg);
+  transform:rotate(-24deg);
+}

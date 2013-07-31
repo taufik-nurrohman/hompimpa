@@ -1,0 +1,45 @@
+/* Home */
+.home .box {
+  width:40px;
+  height:20px;
+  background-color:white;
+  left:15px;
+  bottom:15px;
+}
+
+.home .box:before {
+  content:"";
+  width:0px;
+  height:0px;
+  border:24px solid transparent;
+  border-bottom-color:white;
+  bottom:100%;
+  left:-4px;
+}
+
+.home .box:after {
+  content:"";
+  width:10px;
+  height:18px;
+  background-color:black;
+  bottom:0px;
+  left:7px;
+}
+
+.home .box span {
+  display:block;
+  width:11px;
+  height:10px;
+  background-color:black;
+  right:5px;
+  bottom:8px;
+}
+
+.home .box span:before {
+  content:"";
+  top:0px;
+  bottom:0px;
+  width:1px;
+  background-color:white;
+  left:5px;
+}

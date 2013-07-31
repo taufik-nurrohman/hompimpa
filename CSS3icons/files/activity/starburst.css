@@ -1,0 +1,27 @@
+/* Star Burst */
+.starburst div {
+  top:15px;
+  right:15px;
+  bottom:15px;
+  left:15px;
+  background-color:white;
+  -webkit-transform:rotate(20deg);
+  -moz-transform:rotate(20deg);
+  -ms-transform:rotate(20deg);
+  -o-transform:rotate(20deg);
+  transform:rotate(20deg);
+}
+
+.starburst div:before {
+  content:"";
+  top:0px;
+  left:0px;
+  background-color:white;
+  width:100%;
+  height:100%;
+  -webkit-transform:rotate(135deg);
+  -moz-transform:rotate(135deg);
+  -ms-transform:rotate(135deg);
+  -o-transform:rotate(135deg);
+  transform:rotate(135deg);
+}

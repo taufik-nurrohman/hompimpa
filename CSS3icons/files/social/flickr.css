@@ -1,0 +1,16 @@
+/* Flickr */
+.flickr .circ1,
+.flickr .circ2 {
+  width:20px;
+  height:20px;
+  background-color:white;
+  border-radius:20px;
+  top:50%;
+  margin-top:-10px;
+  left:13px;
+}
+
+.flickr .circ2 {
+  left:auto;
+  right:13px;
+}

@@ -1,0 +1,60 @@
+/* Newsvine */
+.newsvine .tall {
+  width:4px;
+  height:60px;
+  background-color:white;
+  bottom:0px;
+  left:33px;
+}
+
+.newsvine .child {
+  width:15px;
+  height:3px;
+  background-color:white;
+  top:18px;
+  left:20px;
+  -webkit-transform:rotate(30deg);
+  -moz-transform:rotate(30deg);
+  -ms-transform:rotate(30deg);
+  -o-transform:rotate(30deg);
+  transform:rotate(30deg);
+}
+
+.newsvine .child:before {
+  content:"";
+  width:10px;
+  height:10px;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+  background-color:white;
+  top:-4px;
+  left:-8px;
+}
+
+.newsvine .child:nth-child(2) {top:33px;}
+.newsvine .child:nth-child(3) {top:48px;}
+
+.newsvine .child:nth-child(4),
+.newsvine .child:nth-child(5),
+.newsvine .child:nth-child(6) {
+  left:auto;
+  right:20px;
+  top:25px;
+  -webkit-transform:rotate(-30deg);
+  -moz-transform:rotate(-30deg);
+  -ms-transform:rotate(-30deg);
+  -o-transform:rotate(-30deg);
+  transform:rotate(-30deg);
+}
+
+.newsvine .child:nth-child(4):before,
+.newsvine .child:nth-child(5):before,
+.newsvine .child:nth-child(6):before {
+  top:-4px;
+  left:auto;
+  right:-8px;
+}
+
+.newsvine .child:nth-child(5) {top:40px;}
+.newsvine .child:nth-child(6) {top:55px;}

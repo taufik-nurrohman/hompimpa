@@ -1,0 +1,27 @@
+/* Template */
+.template div {
+  border:2px solid white;
+  top:15px;
+  right:10px;
+  bottom:15px;
+  left:10px;
+}
+
+.template div:before,
+.template div:after {
+  content:"";
+  background-color:white;
+  width:2px;
+  top:10px;
+  right:12px;
+  bottom:0px;
+}
+
+.template div:after {
+  width:auto;
+  height:2px;
+  top:10px;
+  right:0px;
+  bottom:auto;
+  left:0px;
+}

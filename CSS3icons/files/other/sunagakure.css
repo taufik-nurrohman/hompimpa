@@ -1,0 +1,40 @@
+/* Sunagakure */
+.sunagakure div {
+  width:20px;
+  height:22px;
+  border:2px solid white;
+  top:27px;
+  left:23px;
+}
+
+.sunagakure div:before,
+.sunagakure div:after {
+  content:"";
+  width:20px;
+  height:15px;
+  -webkit-box-shadow:inset 0px 0px 0px 4px black;
+  -moz-box-shadow:inset 0px 0px 0px 4px black;
+  box-shadow:inset 0px 0px 0px 4px black;
+  -webkit-border-radius:100%;
+  -moz-border-radius:100%;
+  border-radius:100%;
+  border:2px solid transparent;
+  border-right-color:white;
+  top:1px;
+  left:-22px;
+}
+
+.sunagakure div:after {
+  border-color:transparent transparent transparent white;
+  top:1px;
+  left:auto;
+  right:-22px;
+}
+
+.sunagakure span {
+  width:20px;
+  height:4px;
+  border:2px solid white;
+  top:-12px;
+  left:-2px;
+}

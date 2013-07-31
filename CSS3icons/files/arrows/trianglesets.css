@@ -1,0 +1,36 @@
+/* Triangle Sets */
+.triangle {float:left;}
+
+.triangle div {
+  width:0px;
+  height:0px;
+  border:14px solid transparent;
+}
+
+/* Top arrow */
+.triangle.top div {
+  border-bottom-color:white;
+  top:10px;
+  left:20px;
+}
+
+/* Right arrow */
+.triangle.right div {
+  border-left-color:white;
+  top:20px;
+  left:30px;
+}
+
+/* Bottom arrow */
+.triangle.bottom div {
+  border-top-color:white;
+  bottom:10px;
+  left:20px;
+}
+
+/* Left arrow */
+.triangle.left div {
+  border-right-color:white;
+  top:20px;
+  right:30px;
+}

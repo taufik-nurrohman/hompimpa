@@ -1,0 +1,16 @@
+/* MSN */
+.msn span {
+  font:bold 22px 'Arial Black',Sans-Serif;
+  color:white;
+  display:block;
+  top:18px;
+  right:0px;
+  bottom:0px;
+  left:-2px;
+  text-align:center;
+  -webkit-transform:skewX(-10deg);
+  -moz-transform:skewX(-10deg);
+  -ms-transform:skewX(-10deg);
+  -o-transform:skewX(-10deg);
+  transform:skewX(-10deg);
+}

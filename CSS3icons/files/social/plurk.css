@@ -1,0 +1,17 @@
+/* Plurk */
+.plurk .box {
+  border:10px solid white;
+  top:12px;
+  right:12px;
+  bottom:15px;
+  left:12px;
+}
+
+.plurk .box:after {
+  content:"";
+  width:10px;
+  height:16px;
+  background-color:white;
+  bottom:-24px;
+  left:-10px;
+}

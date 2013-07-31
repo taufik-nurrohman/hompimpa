@@ -1,0 +1,36 @@
+/* Puzzle */
+.puzzle div {
+  width:30px;
+  height:30px;
+  background-color:white;
+  top:18px;
+  left:18px;
+}
+
+.puzzle div:before,
+.puzzle div:after {
+  content:"";
+  width:10px;
+  height:10px;
+  background-color:white;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+  top:10px;
+  right:-8px;
+}
+
+.puzzle div:after {
+  background-color:black;
+  right:auto;
+  left:-3px;
+}
+
+.puzzle div:last-child {
+  background-color:transparent;
+  -webkit-transform:rotate(90deg);
+  -moz-transform:rotate(90deg);
+  -ms-transform:rotate(90deg);
+  -o-transform:rotate(90deg);
+  transform:rotate(90deg);
+}

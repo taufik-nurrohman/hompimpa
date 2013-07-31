@@ -1,0 +1,65 @@
+/* Skull */
+.skull .hd {
+  width:40px;
+  height:40px;
+  background-color:white;
+  -webkit-border-radius:100%;
+  -moz-border-radius:100%;
+  border-radius:100%;
+  left:15px;
+  top:10px;
+}
+
+.skull .hd:before,
+.skull .hd:after {
+  content:"";
+  width:12px;
+  height:12px;
+  background-color:black;
+  -webkit-border-radius:16px 10px 6px 10px;
+  -moz-border-radius:16px 10px 6px 10px;
+  border-radius:16px 10px 6px 10px;
+  top:14px;
+  left:5px;
+}
+
+.skull .hd:after {
+  left:auto;
+  right:5px;
+  -webkit-border-radius:10px 16px 10px 6px;
+  -moz-border-radius:10px 16px 10px 6px;
+  border-radius:10px 16px 10px 6px;
+}
+
+.skull .mth {
+  width:30px;
+  height:20px;
+  background-color:white;
+  bottom:10px;
+  left:20px;
+}
+
+.skull .mth:before {
+  content:"";
+  width:0px;
+  height:0px;
+  border:10px solid transparent;
+  border-width:9px 4px;
+  border-bottom-color:black;
+  top:-14px;
+  left:11px;
+}
+
+.skull .mth:after {
+  content:"";
+  width:2px;
+  height:8px;
+  background-color:black;
+  bottom:0px;
+  left:9px;
+  border-left:5px solid white;
+  border-right:5px solid white;
+  -webkit-box-shadow:-2px 0px 0px black,2px 0px 0px black;
+  -moz-box-shadow:-2px 0px 0px black,2px 0px 0px black;
+  box-shadow:-2px 0px 0px black,2px 0px 0px black;
+}
