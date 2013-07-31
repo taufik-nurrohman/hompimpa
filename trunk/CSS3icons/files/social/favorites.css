@@ -1,0 +1,32 @@
+/* Favorites */
+.favorites div {
+  position:static;
+}
+
+.favorites div:before,
+.favorites div:after {
+  content:"";
+  width:25px;
+  height:40px;
+  background-color:white;
+  -webkit-border-radius:25px 25px 0px 0px;
+  -moz-border-radius:25px 25px 0px 0px;
+  border-radius:25px 25px 0px 0px;
+  top:15px;
+  left:17px;
+  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(-45deg);
+  -ms-transform:rotate(-45deg);
+  -o-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+}
+
+.favorites div:after {
+  left:auto;
+  right:17px;
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  -o-transform:rotate(45deg);
+  transform:rotate(45deg);
+}

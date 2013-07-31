@@ -1,0 +1,38 @@
+/* Netvous */
+.netvous .n-wrapper {
+  top:14px;
+  right:10px;
+  bottom:14px;
+  left:10px;
+  border-left:10px solid white;
+  border-right:10px solid white;
+}
+
+.netvous .n-wrapper:before,
+.netvous .n-wrapper:after {
+  content:"";
+  width:20px;
+  height:0px;
+  border:10px solid transparent;
+  border-bottom-color:white;
+  top:-3px;
+  left:-2px;
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  -o-transform:rotate(45deg);
+  transform:rotate(45deg);
+}
+
+.netvous .n-wrapper:after {
+  top:auto;
+  right:-2px;
+  bottom:-3px;
+  left:auto;
+  border-color:white transparent transparent transparent;
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  -o-transform:rotate(45deg);
+  transform:rotate(45deg);
+}

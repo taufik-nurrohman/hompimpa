@@ -1,0 +1,40 @@
+/* Diigo */
+.diigo .tall {
+  height:32px;
+  width:6px;
+  background-color:white;
+  position:absolute;
+  top:27px;
+  left:20px;
+}
+
+.diigo .tall + .tall {
+  left:auto;
+  right:20px;
+}
+
+.diigo .tall:before {
+  content:"";
+  width:10px;
+  height:10px;
+  background-color:white;
+  -webkit-border-radius:8px;
+  -moz-border-radius:8px;
+  border-radius:8px;
+  top:-16px;
+  left:-2px;
+}
+
+.diigo .hor {
+  height:22px;
+  -webkit-border-radius:30px / 16px;
+  -moz-border-radius:30px / 16px;
+  border-radius:30px / 16px;
+  -webkit-box-shadow:inset 0px -1px 0px black,0px 6px 0px white;
+  -moz-box-shadow:inset 0px -1px 0px black,0px 6px 0px white;
+  box-shadow:inset 0px -1px 0px black,0px 6px 0px white;
+  top:7px;
+  right:20px;
+  bottom:auto;
+  left:20px;
+}

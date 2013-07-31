@@ -1,0 +1,47 @@
+/* Comments */
+.comments div {
+  top:15px;
+  right:10px;
+  bottom:20px;
+  left:10px;
+  background-color:white;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+}
+
+.comments div:before {
+  content:"";
+  top:10px;
+  right:12px;
+  left:12px;
+  height:10px;
+  -webkit-box-shadow:
+    inset 0px 2px 0px black,
+    inset 0px 4px 0px white,
+    inset 0px 6px 0px black,
+    inset 0px 8px 0px white,
+    inset 0px 10px 0px black;
+  -moz-box-shadow:
+    inset 0px 2px 0px black,
+    inset 0px 4px 0px white,
+    inset 0px 6px 0px black,
+    inset 0px 8px 0px white,
+    inset 0px 10px 0px black;
+  box-shadow:
+    inset 0px 2px 0px black,
+    inset 0px 4px 0px white,
+    inset 0px 6px 0px black,
+    inset 0px 8px 0px white,
+    inset 0px 10px 0px black;
+}
+
+.comments div:after {
+  content:"";
+  width:0px;
+  height:0px;
+  border:5px solid transparent;
+  border-color:white transparent transparent white;
+  top:100%;
+  left:14px;
+}

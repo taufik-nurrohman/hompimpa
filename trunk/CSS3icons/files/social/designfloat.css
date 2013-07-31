@@ -1,0 +1,59 @@
+/* Design Float */
+.design-float .circ {
+  top:6px;
+  right:6px;
+  bottom:6px;
+  left:6px;
+  -webkit-box-shadow:
+    inset 0px 0px 0px 1px white,
+    inset 0px 0px 0px 3px black,
+    inset 0px 0px 0px 12px white,
+    inset 0px 0px 0px 14px black,
+    inset 0px 0px 0px 15px white;
+  -moz-box-shadow:
+    inset 0px 0px 0px 1px white,
+    inset 0px 0px 0px 3px black,
+    inset 0px 0px 0px 12px white,
+    inset 0px 0px 0px 14px black,
+    inset 0px 0px 0px 15px white;
+  box-shadow:
+    inset 0px 0px 0px 1px white,
+    inset 0px 0px 0px 3px black,
+    inset 0px 0px 0px 12px white,
+    inset 0px 0px 0px 14px black,
+    inset 0px 0px 0px 15px white;
+  -webkit-border-radius:70px;
+  -moz-border-radius:70px;
+  border-radius:70px;
+}
+
+.design-float .plus-wrapper {
+  position:static;
+}
+
+.design-float .plus-wrapper:before,
+.design-float .plus-wrapper:after {
+  content:"";
+  height:12px;
+  -webkit-box-shadow:
+    inset -11px 0px 0px black,
+    inset 11px 0px 0px black;
+  -moz-box-shadow:
+    inset -11px 0px 0px black,
+    inset 11px 0px 0px black;
+  box-shadow:
+    inset -11px 0px 0px black,
+    inset 11px 0px 0px black;
+  top:29px;
+  right:8px;
+  bottom:auto;
+  left:8px;
+}
+
+.design-float .plus-wrapper:after {
+  -webkit-transform:rotate(90deg);
+  -moz-transform:rotate(90deg);
+  -ms-transform:rotate(90deg);
+  -o-transform:rotate(90deg);
+  transform:rotate(90deg);
+}

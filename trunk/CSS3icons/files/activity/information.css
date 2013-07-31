@@ -1,0 +1,30 @@
+/* Information */
+.information div {
+  top:15px;
+  right:15px;
+  bottom:15px;
+  left:15px;
+  background-color:white;
+  -webkit-border-radius:100%;
+  -moz-border-radius:100%;
+  border-radius:100%;
+}
+
+.information div:before,
+.information div:after {
+  content:"";
+  width:10px;
+  height:10px;
+  background-color:black;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+  top:5px;
+  left:15px;
+}
+
+.information div:after {
+  height:auto;
+  top:16px;
+  bottom:5px;
+}

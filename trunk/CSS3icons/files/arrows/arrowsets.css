@@ -1,0 +1,63 @@
+/* Arrow Sets */
+.arrow {float:left;}
+
+.arrow div {
+  width:0px;
+  height:0px;
+  border:14px solid transparent;
+}
+
+.arrow div:before {
+  content:"";
+  width:18px;
+  height:22px;
+  background-color:white;
+}
+
+/* Top arrow */
+.arrow.top div {
+  border-bottom-color:white;
+  top:3px;
+  left:20px;
+}
+.arrow.top div:before {
+  bottom:-34px;
+  left:-9px;
+}
+
+/* Right arrow */
+.arrow.right div {
+  border-left-color:white;
+  top:20px;
+  left:40px;
+}
+.arrow.right div:before {
+  width:22px;
+  height:18px;
+  bottom:-9px;
+  left:-34px;
+}
+
+/* Bottom arrow */
+.arrow.bottom div {
+  border-top-color:white;
+  bottom:3px;
+  left:20px;
+}
+.arrow.bottom div:before {
+  top:-34px;
+  left:-9px;
+}
+
+/* Left arrow */
+.arrow.left div {
+  border-right-color:white;
+  top:20px;
+  right:40px;
+}
+.arrow.left div:before {
+  width:22px;
+  height:18px;
+  bottom:-9px;
+  right:-34px;
+}

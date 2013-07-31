@@ -1,0 +1,35 @@
+/* Redo */
+.redo div {
+  top:15px;
+  right:15px;
+  bottom:15px;
+  left:15px;
+  border:7px solid white;
+  -webkit-border-radius:100%;
+  -moz-border-radius:100%;
+  border-radius:100%;
+}
+
+.redo div:before {
+  content:"";
+  width:8px;
+  height:11px;
+  background-color:black;
+  top:4px;
+  right:-7px;
+}
+
+.redo div:after {
+  content:"";
+  width:0px;
+  height:0px;
+  border:12px solid transparent;
+  border-top-color:white;
+  top:-1px;
+  right:-20px;
+  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(-45deg);
+  -ms-transform:rotate(-45deg);
+  -o-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+}

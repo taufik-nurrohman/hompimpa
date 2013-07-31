@@ -1,0 +1,35 @@
+/* Delicious */
+.delicious div {
+  top:10px;
+  right:10px;
+  bottom:10px;
+  left:10px;
+  border:1px solid white;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+}
+
+.delicious div:before,
+.delicious div:after {
+  content:"";
+  width:24px;
+  height:24px;
+  background-color:white;
+}
+
+.delicious div:before {
+  top:0px;
+  left:0px;
+  -webkit-border-radius:2px 0px 0px 0px;
+  -moz-border-radius:2px 0px 0px 0px;
+  border-radius:2px 0px 0px 0px;
+}
+
+.delicious div:after {
+  bottom:0px;
+  right:0px;
+  -webkit-border-radius:0px 0px 2px 0px;
+  -moz-border-radius:0px 0px 2px 0px;
+  border-radius:0px 0px 2px 0px;
+}

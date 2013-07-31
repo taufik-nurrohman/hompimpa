@@ -1,0 +1,51 @@
+/* Twitter */
+.twitter .side {
+  width:22px;
+  height:30px;
+  border:12px solid white;
+  border-width:0px 0px 12px 12px;
+  -webkit-border-radius:6px 0px 6px 20px;
+  -moz-border-radius:6px 0px 6px 20px;
+  border-radius:6px 0px 6px 20px;
+  top:14px;
+  left:16px;
+}
+
+.twitter .side:before {
+  content:"";
+  width:12px;
+  height:12px;
+  -webkit-box-shadow:6px -6px 0px black;
+  -moz-box-shadow:6px -6px 0px black;
+  box-shadow:6px -6px 0px black;
+  -webkit-border-radius:0px 6px 0px 0px;
+  -moz-border-radius:0px 6px 0px 0px;
+  border-radius:0px 6px 0px 0px;
+  top:0px;
+  left:-12px;
+}
+
+.twitter .side:after {
+  content:"";
+  width:12px;
+  height:12px;
+  -webkit-box-shadow:6px -6px 0px black;
+  -moz-box-shadow:6px -6px 0px black;
+  box-shadow:6px -6px 0px black;
+  -webkit-border-radius:0px 6px 0px 0px;
+  -moz-border-radius:0px 6px 0px 0px;
+  border-radius:0px 6px 0px 0px;
+  bottom:-12px;
+  right:0px;
+}
+
+.twitter .hor {
+  width:34px;
+  height:12px;
+  background-color:white;
+  -webkit-border-radius:0px 6px 6px 0px;
+  -moz-border-radius:0px 6px 6px 0px;
+  border-radius:0px 6px 6px 0px;
+  top:24px;
+  left:16px;
+}

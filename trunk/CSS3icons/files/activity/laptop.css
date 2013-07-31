@@ -1,0 +1,32 @@
+/* Laptop */
+.laptop div {
+  top:14px;
+  right:12px;
+  bottom:25px;
+  left:12px;
+  border:2px solid white;
+  -webkit-border-radius:2px 2px 0px 0px;
+  -moz-border-radius:2px 2px 0px 0px;
+  border-radius:2px 2px 0px 0px;
+}
+
+.laptop div:before {
+  content:"";
+  width:52px;
+  height:5px;
+  background-color:white;
+  bottom:-9px;
+  left:-5px;
+  -webkit-border-radius:0px 0px 2px 2px;
+  -moz-border-radius:0px 0px 2px 2px;
+  border-radius:0px 0px 2px 2px;
+}
+
+.laptop div:after {
+  content:"";
+  width:6px;
+  height:1px;
+  background-color:black;
+  bottom:-7px;
+  left:18px;
+}

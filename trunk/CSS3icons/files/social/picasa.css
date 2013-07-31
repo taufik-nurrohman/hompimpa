@@ -1,0 +1,80 @@
+/* Picasa */
+.picasa .circ {
+  top:10px;
+  right:10px;
+  bottom:10px;
+  left:10px;
+  border:2px solid white;
+  background-color:white;
+  -webkit-box-shadow:inset 0px 0px 0px 2px black;
+  -moz-box-shadow:inset 0px 0px 0px 2px black;
+  box-shadow:inset 0px 0px 0px 2px black;
+  -webkit-border-radius:50px;
+  -moz-border-radius:50px;
+  border-radius:50px;
+}
+
+.picasa .circ div {
+  width:22px;
+  height:12px;
+  background-color:black;
+  top:20px;
+  left:12px;
+}
+
+.picasa .circ div:before {
+  content:"";
+  width:0px;
+  height:0px;
+  border-width:10px 11px;
+  border-style:solid;
+  border-color:transparent transparent black transparent;
+  bottom:100%;
+  left:0px;
+}
+
+.picasa .circ div:after {
+  content:"";
+  width:2px;
+  height:10px;
+  background-color:black;
+  top:100%;
+  left:0px;
+}
+
+.picasa .circ span {
+  width:20px;
+  height:2px;
+  background-color:black;
+  display:block;
+  bottom:14px;
+  right:3px;
+}
+
+.picasa .circ span:nth-child(2) {
+  right:12px;
+  bottom:26px;
+  width:2px;
+  height:16px;
+}
+
+.picasa .circ span:nth-child(3) {
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  -o-transform:rotate(45deg);
+  transform:rotate(45deg);
+  right:15px;
+  bottom:36px;
+}
+
+.picasa .circ span:nth-child(4) {
+  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(-45deg);
+  -ms-transform:rotate(-45deg);
+  -o-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+  right:20px;
+  bottom:25px;
+  width:28px;
+}

@@ -1,0 +1,46 @@
+/* Melody */
+.melody div {
+  width:20px;
+  height:15px;
+  background-color:white;
+  -webkit-border-radius:100%;
+  -moz-border-radius:100%;
+  border-radius:100%;
+  bottom:15px;
+  left:20px;
+  -webkit-transform:rotate(-15deg);
+  -moz-transform:rotate(-15deg);
+  -ms-transform:rotate(-15deg);
+  -o-transform:rotate(-15deg);
+  transform:rotate(-15deg);
+}
+
+.melody div:before {
+  content:"";
+  width:2px;
+  height:30px;
+  background-color:white;
+  bottom:50%;
+  right:0px;
+  -webkit-transform:rotate(15deg) translateX(4px);
+  -moz-transform:rotate(15deg) translateX(4px);
+  -ms-transform:rotate(15deg) translateX(4px);
+  -o-transform:rotate(15deg) translateX(4px);
+  transform:rotate(15deg) translateX(4px);
+}
+
+.melody div:after {
+  content:"";
+  width:20px;
+  height:20px;
+  border-right:5px solid white;
+  border-top:5px solid transparent;
+  border-radius:0px 0px 20px 0px;
+  bottom:11px;
+  right:-15px;
+  -webkit-transform:rotate(-30deg);
+  -moz-transform:rotate(-30deg);
+  -ms-transform:rotate(-30deg);
+  -o-transform:rotate(-30deg);
+  transform:rotate(-30deg);
+}

@@ -1,0 +1,12 @@
+/* Google */
+.google span {
+  display:block;
+  font:normal 58px Times,Serif;
+  color:white;
+  top:-7px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+  line-height:58px;
+  text-align:center;
+}

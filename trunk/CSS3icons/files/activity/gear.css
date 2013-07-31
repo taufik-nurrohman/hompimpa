@@ -1,0 +1,62 @@
+/* Gear */
+.gear div {
+  top:20px;
+  right:20px;
+  bottom:20px;
+  left:20px;
+  background-color:black;
+  -webkit-border-radius:100%;
+  -moz-border-radius:100%;
+  border-radius:100%;
+  border-radius:100%;
+  -webkit-box-shadow:
+    inset 0px 0px 0px 10px white,
+    inset 0px 0px 0px 12px black,
+    inset 0px 0px 0px 14px white;
+  -moz-box-shadow:
+    inset 0px 0px 0px 10px white,
+    inset 0px 0px 0px 12px black,
+    inset 0px 0px 0px 14px white;
+  box-shadow:
+    inset 0px 0px 0px 10px white,
+    inset 0px 0px 0px 12px black,
+    inset 0px 0px 0px 14px white;
+}
+
+.gear span {
+  width:6px;
+  height:30px;
+  top:0px;
+  left:12px;
+  -webkit-box-shadow:
+    0px -4px 0px white,
+    0px 4px 0px white;
+  -moz-box-shadow:
+    0px -4px 0px white,
+    0px 4px 0px white;
+  box-shadow:
+    0px -4px 0px white,
+    0px 4px 0px white;
+}
+
+.gear span:nth-child(2) {
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  -o-transform:rotate(45deg);
+  transform:rotate(45deg);
+}
+.gear span:nth-child(3) {
+  -webkit-transform:rotate(90deg);
+  -moz-transform:rotate(90deg);
+  -ms-transform:rotate(90deg);
+  -o-transform:rotate(90deg);
+  transform:rotate(90deg);
+}
+.gear span:nth-child(4) {
+  -webkit-transform:rotate(135deg);
+  -moz-transform:rotate(135deg);
+  -ms-transform:rotate(135deg);
+  -o-transform:rotate(135deg);
+  transform:rotate(135deg);
+}

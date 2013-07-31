@@ -1,0 +1,87 @@
+/* Propeller */
+.propeller .circ {
+  width:30px;
+  height:30px;
+  background-color:white;
+  -webkit-border-radius:30px;
+  -moz-border-radius:30px;
+  border-radius:30px;
+  top:20px;
+  left:20px;
+}
+
+.propeller .circ span {
+  display:block;
+  width:2px;
+  height:50px;
+  background-color:white;
+  -webkit-transform:rotate(25deg) translate(8px,-12px);
+  -moz-transform:rotate(25deg) translate(8px,-12px);
+  -ms-transform:rotate(25deg) translate(8px,-12px);
+  -o-transform:rotate(25deg) translate(8px,-12px);
+  transform:rotate(25deg) translate(8px,-12px);
+}
+
+.propeller .circ span:before {
+  content:"";
+  width:8px;
+  height:8px;
+  background-color:white;
+  -webkit-border-radius:8px;
+  -moz-border-radius:8px;
+  border-radius:8px;
+  top:-8px;
+  left:-3px;
+}
+
+.propeller .circ span:after {
+  content:"";
+  width:14px;
+  height:14px;
+  background-color:white;
+  -webkit-border-radius:14px;
+  -moz-border-radius:14px;
+  border-radius:14px;
+  bottom:-4px;
+  left:-6px;
+}
+
+.propeller .circ span:nth-child(2) {
+  -webkit-transform:rotate(-45deg) translate(18px,8px);
+  -moz-transform:rotate(-45deg) translate(18px,8px);
+  -ms-transform:rotate(-45deg) translate(18px,8px);
+  -o-transform:rotate(-45deg) translate(18px,8px);
+  transform:rotate(-45deg) translate(18px,8px);
+}
+
+.propeller .circ span:nth-child(2):after {
+  width:10px;
+  height:10px;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+  bottom:0px;
+  left:-4px;
+}
+
+.propeller .circ span:nth-child(3) {
+  top:8px;
+  left:0px;
+  height:15px;
+  -webkit-transform:rotate(80deg);
+  -moz-transform:rotate(80deg);
+  -ms-transform:rotate(80deg);
+  -o-transform:rotate(80deg);
+  transform:rotate(80deg);
+}
+
+.propeller .circ span:last-child:after {
+  width:8px;
+  height:8px;
+  bottom:-3px;
+  left:-4px;
+}
+
+.propeller .circ span:last-child:before {
+  display:none;
+}

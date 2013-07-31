@@ -1,0 +1,23 @@
+/* Blogger */
+.blogger .b1 {
+  width:12px;
+  height:7px;
+  border:10px solid white;
+  border-bottom:none;
+  -webkit-border-radius:12px 12px 0px 0px;
+  -moz-border-radius:12px 12px 0px 0px;
+  border-radius:12px 12px 0px 0px;
+  top:16px;
+  left:16px;
+}
+
+.blogger .b2 {
+  width:18px;
+  height:5px;
+  border:10px solid white;
+  -webkit-border-radius:0px 2px 14px 14px;
+  -moz-border-radius:0px 2px 14px 14px;
+  border-radius:0px 2px 14px 14px;
+  bottom:15px;
+  left:16px;
+}

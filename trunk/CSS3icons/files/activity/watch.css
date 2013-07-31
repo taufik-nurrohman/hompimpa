@@ -1,0 +1,28 @@
+/* Watch */
+.watch div {
+  top:15px;
+  left:15px;
+  width:40px;
+  height:40px;
+  background-color:white;
+  -webkit-border-radius:100% 0%;
+  -moz-border-radius:100% 0%;
+  border-radius:100% 0%;
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  -o-transform:rotate(45deg);
+  transform:rotate(45deg);
+}
+
+.watch div:after {
+  content:"";
+  top:11px;
+  left:11px;
+  width:6px;
+  height:6px;
+  border:6px solid black;
+  -webkit-border-radius:100%;
+  -moz-border-radius:100%;
+  border-radius:100%;
+}
