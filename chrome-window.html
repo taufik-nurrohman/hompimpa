@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Minimalist Google Chrome Window</title>
+<style>
+
+* {
+  margin:0;
+  padding:0;
+}
+
+body {
+  background-color:#ccc;
+  background-image:-webkit-linear-gradient(top,#ccc,#aaa);
+  background-image:-moz-linear-gradient(top,#ccc,#aaa);
+  background-image:-ms-linear-gradient(top,#ccc,#aaa);
+  background-image:-o-linear-gradient(top,#ccc,#aaa);
+  background-image:linear-gradient(top,#ccc,#aaa);
+}
+
+/* I'm stuck in drawing the chrome tabs! (http://hompimpaalaihumgambreng.blogspot.com) */
+
+/* Window */
+.chrome-window {
+  background-color:#3B68B5;
+  background-image:-webkit-linear-gradient(top,#5F91DC 0%,#3B68B5 25px,#3B68B5 100%);
+  background-image:-moz-linear-gradient(top,#5F91DC 0%,#3B68B5 25px,#3B68B5 100%);
+  background-image:-ms-linear-gradient(top,#5F91DC 0%,#3B68B5 25px,#3B68B5 100%);
+  background-image:-o-linear-gradient(top,#5F91DC 0%,#3B68B5 25px,#3B68B5 100%);
+  background-image:linear-gradient(top,#5F91DC 0%,#3B68B5 25px,#3B68B5 100%);
+  width:600px;
+  border:1px solid;
+  border-color:#595959 #444 #444 #494949;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+  -webkit-box-shadow:inset 0 0 0 1px rgba(255,255,255,.1);
+  -moz-box-shadow:inset 0 0 0 1px rgba(255,255,255,.1);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.1);
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-300px;
+  margin-top:-150px;
+  overflow:hidden;
+  font:normal normal 12px Segoe,"Segoe UI",Arial,Sans-Serif;
+  color:#222;
+  z-index:999;
+}
+
+/* Window title */
+.chrome-window h1 {
+  font:inherit;
+  font-weight:bold;
+  color:white;
+  margin:0 0;
+  padding:4px 0 4px 10px;
+}
+
+/* Window address bar */
+.window-header {
+  margin:0 2px;
+  padding:1px 0;
+  border:1px solid #2E518C;
+  border-bottom-color:#AAAAAB;
+  background-color:white;
+  position:relative;
+}
+
+.window-header:before {
+  content:"";
+  display:block;
+  width:10px;
+  height:13px;
+  background-color:#eee;
+  border:1px solid #949495;
+  border-bottom-color:#838384;
+  -webkit-box-shadow:inset 0 0 0 1px white,0 1px 2px #ccc;
+  -moz-box-shadow:inset 0 0 0 1px white,0 1px 2px #ccc;
+  box-shadow:inset 0 0 0 1px white,0 1px 2px #ccc;
+  position:absolute;
+  top:6px;
+  left:8px;
+}
+
+.window-header input {
+  width:592px;
+  display:block;
+  margin:0 auto;
+  padding:4px 4px 5px 24px;
+  font:inherit;
+  color:inherit;
+  border:1px solid #B4BCC7;
+  outline:none;
+  background-color:white;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+/* Window body */
+.window-inner {
+  height:200px;
+  border:1px solid #2E518C;
+  border-top:none;
+  margin:0 2px 2px;
+  background-color:white;
+  -webkit-box-shadow:inset 0 0 0 1px #DFDFDF;
+  -moz-box-shadow:inset 0 0 0 1px #DFDFDF;
+  box-shadow:inset 0 0 0 1px #DFDFDF;
+  padding:4px;
+  word-wrap:break-word;
+  overflow:auto;
+  cursor:text;
+}
+
+/* Buttons */
+.right-buttons {
+  position:absolute;
+  top:-1px;
+  right:4px;
+  font:0/0 a;
+  text-shadow:none;
+}
+
+.right-buttons a {
+  display:block;
+  float:left;
+  margin:0 0 0 -1px;
+  width:26px;
+  height:16px;
+  border:1px solid #345181;
+  -webkit-box-shadow:inset 1px 1px 0 rgba(255,255,255,.2);
+  -moz-box-shadow:inset 1px 1px 0 rgba(255,255,255,.2);
+  box-shadow:inset 1px 1px 0 rgba(255,255,255,.2);
+  text-decoration:none;
+  position:relative;
+  cursor:default;
+  -webkit-transition:all .2s ease-out;
+  -moz-transition:all .2s ease-out;
+  -ms-transition:all .2s ease-out;
+  -o-transition:all .2s ease-out;
+  transition:all .2s ease-out;
+}
+
+.right-buttons a:after {
+  content:"";
+  display:block;
+  position:absolute;
+}
+
+.right-buttons .minimize-btn {
+  -webkit-border-radius:0 0 0 3px;
+  -moz-border-radius:0 0 0 3px;
+  border-radius:0 0 0 3px;
+}
+
+.right-buttons .minimize-btn:after {
+  right:7px;
+  bottom:4px;
+  left:7px;
+  height:3px;
+  background-color:#BCCFEF;
+  border:1px solid #233656;
+  -webkit-border-radius:2px;
+  -moz-border-radius:2px;
+  border-radius:2px;
+}
+
+.right-buttons .maximize-btn:after {
+  top:4px;
+  right:8px;
+  bottom:4px;
+  left:8px;
+  border:2px solid #BCCFEF;
+  -webkit-box-shadow:0 0 0 1px #233656,inset 0 0 0 1px #233656;
+  -moz-box-shadow:0 0 0 1px #233656,inset 0 0 0 1px #233656;
+  box-shadow:0 0 0 1px #233656,inset 0 0 0 1px #233656;
+  -webkit-border-radius:1px;
+  -moz-border-radius:1px;
+  border-radius:1px;
+}
+
+.right-buttons .close-btn {
+  -webkit-border-radius:0 0 3px 0;
+  -moz-border-radius:0 0 3px 0;
+  border-radius:0 0 3px 0;
+}
+
+.right-buttons .close-btn {
+  width:42px;
+}
+
+.right-buttons .close-btn:after {
+  content:"x";
+  font:normal normal 14px/13px Verdana,Arial,Sans-Serif;
+  color:#BCCFEF;
+  text-shadow:0 1px #233656,1px 0 #233656,-1px 0 #233656,0 -1px #233656;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  text-align:center;
+}
+
+.right-buttons a:hover {
+  background-color:#8BAEE4;
+  box-shadow:inset 1px 1px 0 rgba(255,255,255,.4);
+}
+
+.right-buttons a.close-btn:hover {
+  background-color:#DA4D4B;
+}
+
+.right-buttons .minimize-btn:hover:after {background-color:white}
+.right-buttons .maximize-btn:hover:after {border-color:white}
+.right-buttons .close-btn:hover:after {color:white}
+
+</style>
+</head>
+<body>
+
+<div class="chrome-window">
+  <h1>Chrome Window</h1>
+  <div class="right-buttons">
+    <a title="Minimize" class="minimize-btn" href="#minimize">Minimize</a>
+    <a title="Maximize" class="maximize-btn" href="#maximize">Maximize</a>
+    <a title="Close" class="close-btn" href="#close">Close</a>
+  </div>
+  <div class="window-header">
+    <input type="text" onfocus="this.select();" spellcheck="false" value="chrome://chrome">
+  </div>
+  <div class="window-inner" contenteditable="true" spellcheck="false">
+    Yadda... yaddaaa...
+  </div>
+</div>
+
+</body>
+</html>
