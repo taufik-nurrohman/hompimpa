@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+		<meta content="jquery, lorem ipsum, lipsum-ui, generator" name="keywords" />
+		<meta content="Lipsum-UI, Advanced Lorem Ipsum Generator" name="description" />
+		<title>Lipsum-UI</title>
+		<link rel="shortcut icon" href="images/meeeeeee.png" />
+		<link type="text/css" href="css/ui-custom-theme.css" rel="stylesheet" />
+		<link type="text/css" href="css/style.css" rel="stylesheet" />
+	</head>
+
+	<body>
+
+		<div id="sidebar">
+			<div id="akordion">
+				<h3 id="openHeading"><a href="#">Add Heading</a></h3>
+				<div class="panel">	
+					<div id="header">
+						<button class="choose" id="h1">Add Heading 1</button>
+						<button class="choose" id="h2">Add Heading 2</button>
+						<button class="choose" id="h3">Add Heading 3</button>
+						<button class="choose" id="h4">Add Heading 4</button>
+						<button class="choose" id="h5">Add Heading 5</button>
+						<button class="choose" id="h6">Add Heading 6</button>
+					</div>
+				</div>
+
+				<h3><a href="#">Add New Paragraph</a></h3>
+				<div class="panel">
+					<div class="imageBox">
+						<input id="imageSource" class="inputs" type="text" value="images/image1.jpg" /><label for="imageSource">This is your default image URL</label>
+					</div>
+					<div class="imageBox">
+						<textarea id="pg" spellcheck="false">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</textarea>
+						<button id="addParagraph" class="add">Add Paragraph</button>
+					</div>
+					<div class="imageBox">
+						<button id="addPreBlock" class="add">Sample Pre &amp; Blockquote</button>
+						<button id="addOther" class="add">Others</button>
+					</div>
+				</div>
+
+				<h3><a href="#">Add List</a></h3>
+				<div class="panel">
+					<button id="addol" class="add">Add Ordered List</button>
+					<button id="addul" class="add">Add Unordered List</button>
+				</div>
+
+				<h3><a href="#">Add Table</a></h3>
+				<div class="panel">
+					<button id="addTable" class="add">Add Table</button>
+				</div>
+
+				<h3><a href="#">Add a Set of Form</a></h3>
+				<div class="panel">
+					<button id="addForms" class="add">Add Forms</button>
+				</div>
+
+				<h3><a href="#">Add Video</a></h3>
+				<div class="panel">
+					<div class="imageBox">
+						<input id="source1" class="inputs" type="text" placeholder="Path to video.ogg" />
+						<input id="source2" class="inputs" type="text" placeholder="Path to video.mp4" />
+						<input id="source3" class="inputs" type="text" placeholder="Path to video.webm" />
+					</div>
+					<div class="imageBox">
+						<button id="addVideo" class="add">Add</button>
+					</div>
+				</div>
+
+			</div> <!-- end akordion -->
+		</div>
+
+
+		<div id="preview">
+			<div id="area"><div class="sortable"><h2>This is a Default Lorem Ipsum</h2><input type="checkbox" class="remove" /></div><div class="sortable"><div class="separator align-left"><img src="images/image1.jpg" alt="example image" /><div class="remove image-option ui-widget-header"><b>Float:</b> <a class="fleft selected" href="#">left</a> &bull; <a class="fright" href="#">right</a> &bull; <a class="fnone" href="#">none</a> &bull; <a class="dels" href="#">remove image</a></div></div><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.<span class="remove"> <a class="plus" href="#">add more words (+)</a> <a class="minus" href="#">undo add (&times;)</a></span></p><div class="remove clear"></div><input type="checkbox" class="remove" /></div><div class="footer ui-widget-header remove">&#169; 1 January 2012, Sumpiuh - Indonesia :: <a href="http://gplus.to/tovic" target="_blank">Taufik Nurrohman</a></div></div> <!-- end area -->
+		</div> <!-- end preview -->
+
+
+		<div id="mainButton" class="ui-widget-header">
+			<button id="resetItem">Reset All Saved Data</button>
+			<button id="removeAll">Remove All Checked</button>
+			<button id="open">Options</button>
+			<button id="generate">Generate Code</button>
+			<button id="extras">Extras</button>
+			<div class="logo"><a href="http://gplus.to/tovic" target="_blank"><img src="images/meeeeeee.png" alt="Me" /></a></div>
+		</div>
+
+
+
+		<div id="generated">
+			<textarea id="thecode" spellcheck="false"></textarea>
+		</div>
+		<div class="confirmbox" style="display:none;"></div>
+
+
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+		<script type="text/javascript" src="js/lipsum-v1.js"></script>
+
+
+	</body>
+</html>
