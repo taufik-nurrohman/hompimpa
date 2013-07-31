@@ -1,0 +1,8 @@
+Saat Anda merasa bahwa ide Anda memang perlu untuk diungkapkan, ungkapkan saja. Tidak ada batasan peraturan untuk itu.
+
+Kita adalah manusia dengan seribu keterbatasan. Itu adalah doktrin pesimis kita sejak dulu. Tapi, kupikir itu semua hanyalah soal hilangnya kepercayaan dan keyakinan bahwa kita bisa berhasil melakukannya, dedikasi terhadap bakat kita yang seringkali mengalami pasang-surut. Secara teknis, kekalahan sesaat itu hanyalah sebuah masalah kecil yang sulit untuk Anda selesaikan, namun mudah bagi orang lain. Anda tahu kenapa bisa begitu, karena Anda adalah seseorang yang istimewa. Anda boleh saja tidak bisa menyelesaikan masalah Anda, tapi fakta mengatakan bahwa Anda bisa menyelesaikan seribu masalah yang dialami oleh orang lain.
+
+Meskipun agak merendahkan diri, tetapi dalam lubuk hati yang paling dalam Anda tahu bahwa Anda bisa memanfaatkan segala yang ada di hadapan Anda untuk dijadikan sebagai jalan alternatif sebagai jalur kecil menuju jalan utama. Anda adalah seseorang yang cerdas! Bukankah Anda selalu merasakan hal yang sama setiap kali menemukan sebuah ide cemerlang? Perasaan menggebu-gebu dan deburan ombak dalam jiwa yang tidak tertahankan. Anda ingin segera mengungkapkan itu tetapi Anda tidak bisa. Anda bilang Anda memiliki keterbatasan dalam hal bagaimana cara mengungkapkan ide Anda. Tapi Saya percaya, bahwa Anda dan kita semua adalah orang-orang luar biasa yang akan mengubah dunia. Dunia gelap di belakang kita dan terutama di hadapan kita, cepat atau lambat tidak akan berani lagi menyentuh kita, karena kita adalah sebuah lampu organik ramah lingkungan yang terang benderang.
+
+
+				Taufik - 2 Januari 2012

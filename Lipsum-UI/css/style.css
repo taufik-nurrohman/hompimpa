@@ -1,0 +1,265 @@
+/**
+ * Advanced Lorem Ipsum Generator, Lipsum-UI created by Taufik Nurrohman
+ * Date: 1 January 2012 (HAPPY NEW YEAR!)
+ * URL: http://hompimpaalaihumgambreng.blogspot.com
+ * Mottie: Thanks for all your help to realize this project :D
+ *
+ */
+
+
+
+* {margin:0;padding:0;}
+
+html {overflow-y:scroll;}
+
+body {
+  background:#F2F2F2 url(images/bg.png) no-repeat fixed top right;
+  font:normal 11px Arial,Sans-Serif;
+  color:#555;
+}
+
+form button, form input[type="button"], form input[type="submit"], form input[type="reset"] {
+  padding:2px 5px;
+  font:bold 10px Arial,Sans-Serif;
+  margin:3px 0px;
+}
+
+p a.plus, p a.minus, li a.plus, li a.minus {
+  color:#1C94C4;
+  background:#fff;
+  text-decoration:none;
+  padding:0px 3px;
+}
+
+abbr {border-bottom:1px dotted #666;}
+
+blockquote {
+  background:#fff url(images/quote.jpg) no-repeat top left;
+  padding:10px 10px 10px 50px;
+  margin:10px 70px;
+  font:bold 12px Georgia,Times,Serif;
+}
+
+pre {border:1px dashed #ddd;background:#eee;padding:10px;overflow:auto;margin:10px 30px;}
+
+.separator {position:relative;}
+
+.align-left {float:left;margin:0px 10px 10px 0px;}
+.align-right {float:right;margin:0px 0px 10px 10px;}
+.align-center {clear:both;display:block;margin:0px 0px 10px;text-align:center;}
+
+.separator .image-option {
+  position:absolute;
+  bottom:14px;
+  left:10px;
+  padding:5px 10px;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+  display:none;
+}
+
+.separator.video .image-option {
+  left:7px;
+  bottom:7px;
+}
+
+.separator .image-option a.selected {text-decoration:none !important;}
+
+#sidebar {
+  width:350px;
+  display:none;
+}
+
+#sidebar textarea {
+  background:#fff;
+  border:1px solid #ccc;
+  padding:5px;
+}
+
+#sidebar #header {text-align:center;}
+
+#sidebar button.choose {
+  margin-bottom:5px;
+}
+
+#sidebar .imageBox {
+  padding:5px 15px;
+  background:#D0DCEC;
+  border:1px solid #ADBCD3;
+  margin-top:5px;
+}
+
+#sidebar .imageBox .inputs {
+  padding:5px 5px;
+  width:200px;
+  margin-right:10px;
+  border:1px solid #ccc;
+  background:#fff;
+  font:bold 11px Verdana,Arial,Sans-Serif;
+}
+
+#sidebar .panel button, .ui-dialog button {
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+}
+
+#mainButton {
+  position:fixed !important;
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:90%;
+  z-index:1000;
+  padding:15px 5%;
+  cursor:move;
+}
+
+#mainButton .logo {
+  position:absolute;
+  top:7px;
+  right:12px;
+}
+
+#mainButton .logo img {
+  border:none;
+  outline:none;
+}
+
+#preview {
+  width:100%;
+  height:100%;
+  margin-bottom:100px;
+}
+
+#preview table {
+  border-collapse:collapse;
+}
+
+#preview table td, #preview table th {
+  border:1px solid #999;
+  padding:10px 15px;
+  background-color:#fff;
+}
+
+#preview table th {background-color:#eee;}
+
+#preview ul, #preview ol {
+  margin:0px 0px 0px 20px;
+}
+
+#area {
+  width:720px;
+  height:100%;
+  margin:100px auto 100px;
+}
+
+textarea#pg {
+  display:block;
+  width:97%;
+  height:200px;
+  margin:10px 0px 10px 0px;
+}
+
+.sortable {
+  padding:10px;
+  margin:0px 0px 2px;
+  position:relative;
+  border:1px solid #ccc;
+  background:#fff;
+  cursor:move;
+}
+
+.sortable img {
+  border:1px solid #e5e5e5;
+  background:#eee;
+  padding:2px;
+}
+
+.sortable input.remove {
+  position:absolute;
+  top:10px;
+  left:10px;
+  cursor:default;
+  display:none;
+}
+.sortable:hover,
+.sortable.active {background:#FFFF00;}
+.sortable:hover input.remove,
+.sortable.active input.remove {display:block;}
+
+.sortable form {
+  width:284px;
+  margin:0px auto 0px;
+  text-align:left;
+  background:#ddd;
+  border:2px solid #ccc;
+  padding:15px;
+}
+
+.sortable form textarea {display:block;margin:5px 0px;}
+
+.sortable form textarea, .sortable form input[type="text"], .sortable select {
+  background:#fff;
+  border:1px solid #bbb;
+  font:bold 11px Arial,Sans-Serif;
+  padding:5px;
+  margin:5px 0px 0px;
+  width:270px;
+}
+
+.sortable video {
+  margin:0px auto 0px;
+  background:#111;
+  -webkit-box-shadow:0px 0px 10px rgba(0,0,0,0.4);
+  -moz-box-shadow:0px 0px 10px rgba(0,0,0,0.4);
+  box-shadow:0px 0px 10px rgba(0,0,0,0.4);
+}
+
+.footer {padding:10px 15px;margin:2px 0px;}
+
+#preview li.remove {list-style:none;}
+
+#preview tr.remove td {padding:5px 15px !important;}
+
+#thecode {
+  width:96% !important;
+  border:none !important;
+  height:auto;
+  margin:0px 1px 0px 0px;
+  resize:none;
+  display:none;
+}
+
+#generate {}
+
+#loading-helper {margin:100px 50px;text-align:center;}
+#loading-helper strong.ui-state-error {padding:5px 10px;}
+
+.ui-dialog #thecode.ui-dialog-content {
+  background:#222;
+  color:#ccc;
+  font-family:Monaco,'Courier MS',Monospace;
+}
+
+.ui-dialog .confirmbox.ui-dialog-content {
+  color:#333;
+  font:normal 11px Verdana,Arial,Sans-Serif;
+}
+
+.ui-dialog-content a {color:#1C94C4;}
+
+.ui-accordion .ui-accordion-content {padding:5px 5px;}
+
+.hidden {display:none;}
+
+.clear {clear:both;}
+
+@media screen and (max-width:1024px) {
+	#area {
+	  width:70%;
+	  height:100%;
+	  margin:100px auto 0px;
+	}
+}
