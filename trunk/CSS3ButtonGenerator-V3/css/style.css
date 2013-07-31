@@ -1,0 +1,277 @@
+/*
+ * CSS3 Button Maker
+ * oleh Chris Coyier
+ * http://css-tricks.com
+ * Dimodifikasi oleh Taufik Nurrohman
+ * http://hompimpaalaihumgambreng.blogspot.com
+ * Rekonstruksi Pertama::16 November 2011
+ * Rekonstruksi ke dua::5 Maret 2012
+ */
+
+* {
+  margin:0;
+  padding:0;
+}
+*:focus {outline:none}
+html {overflow-y:scroll}
+body {
+  text-align:left;
+  font:normal 11px/14px Arial,Sans-serif;
+  background-color:#fbfbfb;
+  color:#333;
+}
+pre {
+  border:1px dashed #dcdcdc;
+  background-color:#eee;
+  padding:5px 15px;
+  margin:10px;
+  overflow:auto;
+}
+#page-wrap {
+  width:600px;
+  padding:50px 50px;
+  -webkit-box-shadow:0 0 3px rgba(0,0,0,0.5);
+  -moz-box-shadow:0 0 3px rgba(0,0,0,0.5);
+  box-shadow:0 0 3px rgba(0,0,0,0.5);
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+  border-radius:20px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin:-215px auto auto -325px;
+}
+#page-wrap h1 {
+  font:normal 40px Impact,Arial,Sans-Serif;
+  margin:0 0 40px 0;
+  text-align:center;
+  text-shadow:0 1px 0 rgba(0,0,0,0.2);
+}
+#page-wrap h2,
+#page-wrap h3,
+.ui-widget h2 {
+  margin:0 0 7px;
+  font-family:Impact,Arial,Sans-Serif;
+  font-weight:normal;
+  text-shadow:0 1px 0 rgba(0,0,0,0.2);
+}
+#button-box {
+  position:relative;
+  height:160px;
+  width:50%;
+  overflow:auto;
+  margin-bottom:10px;
+  background-color:#f5f5f5;
+  float:left;
+  -webkit-box-shadow:inset 0 0 10px rgba(0,0,0,0.2);
+  -moz-box-shadow:inset 0 0 10px rgba(0,0,0,0.2);
+  box-shadow:inset 0 0 10px rgba(0,0,0,0.2);
+}
+#prikitiw {
+  width:45%;
+  float:right;
+}
+#controls {
+  width:50%;
+  float:left;
+}
+#controls .bt {
+  display:block;
+  margin:0 0 0;
+  width:100%;
+  border-top:1px solid #666;
+  border-bottom:1px solid #444;
+  background-color:#555;
+  color:#fff;
+  font:bold 12px Arial,Sans-Serif;
+  padding:5px 0;
+  text-align:center;
+  cursor:pointer;
+}
+#controls .bt:hover {color:#ccc}
+#controls .bt:active {
+  border-bottom:1px solid #666;
+  border-top:1px solid #444;
+}
+select {
+  width:200px;
+  margin:2px 0 5px 15px;
+  font:bold 11px Verdana,Arial,Sans-Serif;
+  border:1px solid #bbb;
+  padding:2px;
+  background-color:#ccc;
+  color:#333;
+  display:block;
+}
+option {border:none}
+input.teks {
+  border:1px solid #bbb;
+  background-color:#ccc;
+  font:bold 11px Verdana,Arial,Sans-Serif;
+  padding:1px 5px;
+  margin-left:7px;
+  width:120px;
+}
+#opsi-lain table {
+  border:none;
+  margin-bottom:30px;
+}
+#opsi-lain table tr,
+#opsi-lain table th,
+#opsi-lain table td {
+  background:transparent;
+  border:none;
+}
+body.hitam {
+  background-color:#393939;
+  color:#ccc;
+}
+#button-box.hitam {background-color:#393939}
+.button {position:absolute}
+
+/* Default style */
+.button {
+  cursor:pointer;
+  border:1px solid #3f5691;
+  background-color:#3059ab;
+  filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#2770d6',endColorstr='#3059ab');
+  background-image:-webkit-linear-gradient(top,#2770d6 0%,#3161c2 50%,#3059ab 100%);
+  background-image:-moz-linear-gradient(top,#2770d6 0%,#3161c2 50%,#3059ab 100%);
+  background-image:-ms-linear-gradient(top,#2770d6 0%,#3161c2 50%,#3059ab 100%);
+  background-image:-o-linear-gradient(top,#2770d6 0%,#3161c2 50%,#3059ab 100%);
+  background-image:linear-gradient(top,#2770d6 0%,#3161c2 50%,#3059ab 100%);
+  padding:20px 40px;
+  -webkit-border-radius:8px;
+  -moz-border-radius:8px;
+  border-radius:8px;
+  -webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.3),0px 1px 2px #515151;
+  -moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.3),0px 1px 2px #515151;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.3),0px 1px 2px #515151;
+  text-shadow:0 1px 0 rgba(0,0,0,0.3);
+  color:#ffffff;
+  font:normal 16px 'Century Gothic',Helvetica,Arial,Sans-Serif;
+  text-decoration:none;
+  outline:none;
+  vertical-align:middle;
+}
+.button:hover {
+  border-color:#0f2852;
+  background-color:#49579c;
+  filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#49579c',endColorstr='#142b70');
+  background-image:-webkit-linear-gradient(top,#49579c 0%,#1b3880 50%,#142b70 100%);
+  background-image:-moz-linear-gradient(top,#49579c 0%,#1b3880 50%,#142b70 100%);
+  background-image:-ms-linear-gradient(top,#49579c 0%,#1b3880 50%,#142b70 100%);
+  background-image:-o-linear-gradient(top,#49579c 0%,#1b3880 50%,#142b70 100%);
+  background-image:linear-gradient(top,#49579c 0%,#1b3880 50%,#142b70 100%);
+  color:#ffffff;
+}
+.button:active {
+  background-color:#142b70;
+  filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#142b70',endColorstr='#49579c');
+  background-image:-webkit-linear-gradient(top,#142b70,#49579c);
+  background-image:-moz-linear-gradient(top,#142b70,#49579c);
+  background-image:-ms-linear-gradient(top,#142b70,#49579c);
+  background-image:-o-linear-gradient(top,#142b70,#49579c);
+  background-image:linear-gradient(top,#142b70,#49579c);
+}
+
+/* End default style */
+.sliderBar {margin:7px 0 10px 0}
+.hompi-warna {
+  font-size:16px;
+  font-weight:bold;
+  cursor:pointer;
+}
+.ui-dialog,
+#controls {
+  -webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
+  -moz-box-shadow:0 1px 3px rgba(0,0,0,0.5);
+  box-shadow:0 1px 3px rgba(0,0,0,0.5);
+}
+.ui-dialog-content {font-size:11px}
+.ui-dialog button {
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+}
+#kode-css {
+  cursor:text;
+  padding:5px 7px;
+  margin:0 0;
+  font:normal 12px Monaco,MonoSpace;
+  background-color:#3f3f3f;
+  color:#C2BE9E;
+  border:5px solid #333;
+}
+#colors div {
+  position:relative;
+  width:100%;
+  height:30px;
+  margin:0 0 0 0;
+}
+#colors div input {
+  width:70px;
+  border:0;
+  cursor:pointer;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  color:transparent;
+  text-indent:-9999px;
+}
+#colors div label {
+  font:bold 11px/22px Arial,Sans-Serif;
+  text-transform:uppercase;
+  display:block;
+  text-align:center;
+  color:black;
+  cursor:pointer;
+  position:relative;
+  z-index:20;
+  color:white;
+  text-shadow:0 0 8px black,0 1px 0 black;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  padding-top:5px;
+  position:absolute;
+}
+#colors div label:hover {font-weight:normal}
+.colorpicker {z-index:9999}
+.author {
+  clear:both;
+  text-align:center;
+  font-size:9px;
+  color:#666;
+  display:block;
+  position:absolute;
+  bottom:5px;
+  right:6px;
+}
+.author a {
+  text-decoration:none;
+  color:#068bc9;
+}
+.author a:hover {text-decoration:underline}
+.clear {clear:both}
+#custom-gradient input {
+  margin:0 5px 0 0;
+  position:relative;
+}
+#howto {
+  position:relative;
+  z-index:777;
+}
+#ukuran,
+#color-stop-advanced,
+#opsi-lain,
+#kode-css,
+#howto {display:none}
+
+@media (max-width:1000px) {
+  #page-wrap {position:static;margin:50px auto 15px}
+  .author {position:static;margin:30px auto 30px}
+}
