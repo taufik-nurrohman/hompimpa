@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="Demo Galleria V2, A JQuery Masonry Widget for Blogger JSON" name="description">
+<meta charset="utf-8">
+<title>Demo Galleria V2 - Infinite Scroll</title>
+<link href="img/ico.png" rel="shortcut icon">
+<link href="theme/light.css" rel="stylesheet" type="text/css" media="screen">
+<style type="text/css">
+html {overflow-y:scroll;}
+body {
+	background:white url('img/bg-line-repeat.png') repeat;
+	font:normal 11px Arial,Sans-Serif;
+	color:#666;
+	margin:0 0;
+	padding:0 0;
+}
+a {color:#3868B5;}
+h1 a {
+	color:#666;
+	text-decoration:none;
+}
+header,
+footer {
+	display:block;
+	background-color:white;
+	background-image:-webkit-linear-gradient(top,white,#eee);
+	background-image:-moz-linear-gradient(top,white,#eee);
+	background-image:-ms-linear-gradient(top,white,#eee);
+	background-image:-o-linear-gradient(top,white,#eee);
+	background-image:linear-gradient(top,white,#eee);
+	padding:10px 15px;
+	overflow:hidden;
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.4);
+	-moz-box-shadow:0 1px 3px rgba(0,0,0,0.4);
+	box-shadow:0 1px 3px rgba(0,0,0,0.4);
+}
+section {
+	display:block;
+	margin:30px 0;
+	min-height:1000px;
+}
+header h1 {
+	font:normal 18px 'Yanone Kaffeesatz',Impact,Arial,Sans-serif;
+	margin:0 0;
+	padding:0 0;
+	text-transform:uppercase;
+	text-shadow:0 1px 0 white;
+}
+#dte-masonry-nav {
+	line-height:50px;
+	border-top:1px solid white;
+	-webkit-box-shadow:0 -1px 0 #ddd;
+	-moz-box-shadow:0 -1px 0 #ddd;
+	box-shadow:0 -1px 0 #ddd;
+	margin:30px 30px 0 30px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+	<h1><a href="http://hompimpaalaihumgambreng.blogspot.com">Demo Galleria V2: Infinite Scroll</a></h1>
+</header>
+
+<section>
+
+<div id="dte-masonry-container"></div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.masonry.min.js"></script>
+<script type="text/javascript" src="js/post.brick.js"></script>
+<script type="text/javascript">
+$('#dte-masonry-container').bloggerMasonry({infiniteScroll:true,fallbackThumb:"img/meee.png"});
+</script>
+
+</section>
+
+<footer>
+<a rel="license" title="JQuery Masonry Widget for Blogger JSON by Taufik Nurrohman is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0;display:inline-block;vertical-align:middle;" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></a>
+</footer>
+
+
+</body>
+</html>
