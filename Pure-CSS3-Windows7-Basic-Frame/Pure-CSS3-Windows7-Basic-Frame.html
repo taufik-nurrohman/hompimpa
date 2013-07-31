@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pure CSS3 Windows7 Basic Frame</title>
+<style type="text/css">
+
+/**
+ * CSS3 Windows7 Basic Frame by Taufik Nurrohman
+ * Release: 17 December 2011
+ * URL: http://hompimpaalaihumgambreng.blogspot.com/
+ * Note: This work is licensed under a Creative Commons Attribution and the God Almighty License.
+ * Please do not replace or remove the attribution above if you want to save/modify this project legally.
+ */
+
+* {
+  margin:0 0 0 0;
+  padding:0 0 0 0;
+  list-style:none;
+}
+
+:focus {
+  outline:none;
+}
+
+body {
+  background:#27527C;
+  letter-spacing:0px;
+}
+
+#w-frame {
+  width:800px;
+  border:1px solid rgba(0,0,0,0.8);
+  background:#222283;
+  background:-webkit-linear-gradient(30deg,#225283 0%,#6A92B6 50%,#5B8EB9 51%,#225283 100%);
+  background:-moz-linear-gradient(30deg,#225283 0%,#6A92B6 50%,#5B8EB9 51%,#225283 100%);
+  background:-ms-linear-gradient(30deg,#225283 0%,#6A92B6 50%,#5B8EB9 51%,#225283 100%);
+  background:-o-linear-gradient(30deg,#225283 0%,#6A92B6 50%,#5B8EB9 51%,#225283 100%);
+  background:linear-gradient(30deg,#225283 0%,#6A92B6 50%,#5B8EB9 51%,#225283 100%);
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin:-200px 0px 0px -400px;
+  -webkit-border-radius:7px;
+  -moz-border-radius:7px;
+  border-radius:7px;
+  -webkit-box-shadow:0px 1px 5px #000,0px 0px 10px rgba(0,0,0,0.5);
+  -moz-box-shadow:0px 1px 5px #000,0px 0px 10px rgba(0,0,0,0.5);
+  box-shadow:0px 1px 5px #000,0px 0px 10px rgba(0,0,0,0.5);
+}
+
+#w-frame-white {
+  background:-webkit-linear-gradient(top,rgba(0,0,0,0.1) 0%,rgba(255,255,255,0.8) 100px,rgba(0,0,0,0) 100px);
+  background:-moz-linear-gradient(top,rgba(0,0,0,0.1) 0%,rgba(255,255,255,0.8) 100px,rgba(0,0,0,0) 100px);
+  background:-ms-linear-gradient(top,rgba(0,0,0,0.1) 0%,rgba(255,255,255,0.8) 100px,rgba(0,0,0,0) 100px);
+  background:-o-linear-gradient(top,rgba(0,0,0,0.1) 0%,rgba(255,255,255,0.8) 100px,rgba(0,0,0,0) 100px);
+  background:linear-gradient(top,rgba(0,0,0,0.1) 0%,rgba(255,255,255,0.8) 100px,rgba(0,0,0,0) 100px);
+  border:1px solid rgba(255,255,255,0.9);
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+  border-radius:6px;
+  display:block;
+  height:400px;
+}
+
+#title h4 {
+  font:normal 12px Calibri,Arial,Sans-Serif;
+  color:#000;
+  text-shadow:0px 0px 5px #fff,0px 0px 10px #fff,0px 0px 15px #fff,0px 0px 15px #fff;
+  float:left;
+  margin:5px 0px 7px 30px;
+  position:relative;
+}
+
+#title h4:before,#title h4:after {
+  content:"";
+  width:10px;
+  height:13px;
+  background:#fff;
+  box-shadow:1px 1px 0px #666;
+  position:absolute;
+  top:1px;
+  right:100%;
+  margin-right:8px;
+}
+
+#title h4:after {
+  height:12px;
+  background:-webkit-linear-gradient(-45deg,#fff,#89CBD8);
+  background:-moz-linear-gradient(-45deg,#fff,#89CBD8);
+  background:-ms-linear-gradient(-45deg,#fff,#89CBD8);
+  background:-o-linear-gradient(-45deg,#fff,#89CBD8);
+  background:linear-gradient(-45deg,#fff,#89CBD8);
+  -webkit-transform:skew(-8deg) translate(-2px,0px);
+  -moz-transform:skew(-8deg) translate(-2px,0px);
+  -ms-transform:skew(-8deg) translate(-2px,0px);
+  -o-transform:skew(-8deg) translate(-2px,0px);
+  transform:skew(-8deg) translate(-2px,0px);
+  border-top:1px dotted #000;
+  -webkit-box-shadow:none;
+  -moz-box-shadow:none;
+  box-shadow:none;
+}
+
+#button-wrap {
+  width:auto;
+  border-width:0px 1px 1px 1px;
+  border-style:solid;
+  border-color:rgba(0,0,0,0.8);
+  -webkit-box-shadow:0px 1px 0px rgba(255,255,255,0.9),-1px 0px 0px rgba(255,255,255,0.9),1px 0px 0px rgba(255,255,255,0.9);
+  -moz-box-shadow:0px 1px 0px rgba(255,255,255,0.9),-1px 0px 0px rgba(255,255,255,0.9),1px 0px 0px rgba(255,255,255,0.9);
+  box-shadow:0px 1px 0px rgba(255,255,255,0.9),-1px 0px 0px rgba(255,255,255,0.9),1px 0px 0px rgba(255,255,255,0.9);
+  -webkit-border-radius:0px 0px 5px 5px;
+  -moz-border-radius:0px 0px 5px 5px;
+  border-radius:0px 0px 5px 5px;
+  overflow:visible;
+  float:right;
+  margin:-1px 5px 0px;
+}
+
+#button-wrap .bt {
+  width:26px;
+  height:17px;
+  background:#222;
+  background:-webkit-linear-gradient(bottom,rgba(255,255,255,0.4) 0%,rgba(0,0,0,0.2) 50%,rgba(255,255,255,0.3) 51%,rgba(255,255,255,0.7) 100%);
+  background:-moz-linear-gradient(bottom,rgba(255,255,255,0.4) 0%,rgba(0,0,0,0.2) 50%,rgba(255,255,255,0.3) 51%,rgba(255,255,255,0.7) 100%);
+  background:-ms-linear-gradient(bottom,rgba(255,255,255,0.4) 0%,rgba(0,0,0,0.2) 50%,rgba(255,255,255,0.3) 51%,rgba(255,255,255,0.7) 100%);
+  background:-o-linear-gradient(bottom,rgba(255,255,255,0.4) 0%,rgba(0,0,0,0.2) 50%,rgba(255,255,255,0.3) 51%,rgba(255,255,255,0.7) 100%);
+  background:linear-gradient(bottom,rgba(255,255,255,0.4) 0%,rgba(0,0,0,0.2) 50%,rgba(255,255,255,0.3) 51%,rgba(255,255,255,0.7) 100%);
+  border-right:1px solid rgba(0,0,0,0.8);
+  -webkit-box-shadow:inset 1px 0px 0px rgba(255,255,255,0.4),inset -1px 0px 0px rgba(255,255,255,0.4),inset 0px 1px 0px rgba(255,255,255,0.4),inset 0px -1px 0px rgba(255,255,255,0.4);
+  -moz-box-shadow:inset 1px 0px 0px rgba(255,255,255,0.4),inset -1px 0px 0px rgba(255,255,255,0.4),inset 0px 1px 0px rgba(255,255,255,0.4),inset 0px -1px 0px rgba(255,255,255,0.4);
+  box-shadow:inset 1px 0px 0px rgba(255,255,255,0.4),inset -1px 0px 0px rgba(255,255,255,0.4),inset 0px 1px 0px rgba(255,255,255,0.4),inset 0px -1px 0px rgba(255,255,255,0.4);
+  position:relative;
+  float:right;
+  display:inline;
+  cursor:default;
+}
+
+#button-wrap .bt.close {
+  width:45px;
+  background:-webkit-linear-gradient(bottom,#D27464 0%,#A21A00 50%,#D17C6C 51%,#E5A296 100%);
+  background:-moz-linear-gradient(bottom,#D27464 0%,#A21A00 50%,#D17C6C 51%,#E5A296 100%);
+  background:-ms-linear-gradient(bottom,#D27464 0%,#A21A00 50%,#D17C6C 51%,#E5A296 100%);
+  background:-o-linear-gradient(bottom,#D27464 0%,#A21A00 50%,#D17C6C 51%,#E5A296 100%);
+  background:linear-gradient(bottom,#D27464 0%,#A21A00 50%,#D17C6C 51%,#E5A296 100%);
+  -webkit-border-radius:0px 0px 4px 0px;
+  -moz-border-radius:0px 0px 4px 0px;
+  border-radius:0px 0px 4px 0px;
+  -webkit-box-shadow:inset 0px 1px 0px rgba(255,255,255,0.7),inset 0px 0px 1px #fff;
+  -moz-box-shadow:inset 0px 1px 0px rgba(255,255,255,0.7),inset 0px 0px 1px #fff;
+  box-shadow:inset 0px 1px 0px rgba(255,255,255,0.7),inset 0px 0px 1px #fff;
+  border-right:none;
+}
+
+#button-wrap .bt.close:before {
+  content:"x";
+  line-height:15px;
+  font:bold 14px Verdana,Arial,Sans-Serif;
+  color:#fff;
+  text-shadow:0px 0px 2px #000;
+  position:absolute;
+  top:-2px;
+  left:18px;
+}
+
+#button-wrap .bt.maximize:before {
+  content:"";
+  width:6px;
+  height:4px;
+  border:2px solid #fff;
+  -webkit-box-shadow:0px 0px 1px #000,inset 0px 0px 1px #000;
+  -moz-box-shadow:0px 0px 1px #000,inset 0px 0px 1px #000;
+  box-shadow:0px 0px 1px #000,inset 0px 0px 1px #000;
+  position:absolute;
+  top:4px;
+  left:8px;
+}
+
+#button-wrap .bt.minimize {
+  -webkit-border-radius:0px 0px 0px 4px;
+  -moz-border-radius:0px 0px 0px 4px;
+  border-radius:0px 0px 0px 4px;
+}
+
+#button-wrap .bt.minimize:before {
+  content:"";
+  width:8px;
+  height:3px;
+  background:#fff;
+  -webkit-box-shadow:0px 0px 1px #000;
+  -moz-box-shadow:0px 0px 1px #000;
+  box-shadow:0px 0px 1px #000;
+  position:absolute;
+  bottom:5px;
+  left:9px;
+}
+
+#button-wrap .bt:hover {
+  position:relative;
+  z-index:10;
+  background:-webkit-linear-gradient(top,#06FEFB 0%,#176CA2 50%,#176AA2 51%,#A6CFEA 100%);
+  background:-moz-linear-gradient(top,#06FEFB 0%,#176CA2 50%,#176AA2 51%,#A6CFEA 100%);
+  background:-ms-linear-gradient(top,#06FEFB 0%,#176CA2 50%,#176AA2 51%,#A6CFEA 100%);
+  background:-o-linear-gradient(top,#06FEFB 0%,#176CA2 50%,#176AA2 51%,#A6CFEA 100%);
+  background:linear-gradient(top,#06FEFB 0%,#176CA2 50%,#176AA2 51%,#A6CFEA 100%);
+  -webkit-box-shadow:inset 0px 1px 0px #fff,0px -1px 2px #06FEFB,0px 2px 5px #06FEFB,0px 2px 10px #06FEFB;
+  -moz-box-shadow:inset 0px 1px 0px #fff,0px -1px 2px #06FEFB,0px 2px 5px #06FEFB,0px 2px 10px #06FEFB;
+  box-shadow:inset 0px 1px 0px #fff,0px -1px 2px #06FEFB,0px 2px 5px #06FEFB,0px 2px 10px #06FEFB;
+}
+
+#button-wrap .bt.close:hover {
+  background:-webkit-linear-gradient(top,#F7C1B9 0%,#A21A00 50%,#A5473B 51%,#D28C8E 100%);
+  background:-moz-linear-gradient(top,#F7C1B9 0%,#A21A00 50%,#A5473B 51%,#D28C8E 100%);
+  background:-ms-linear-gradient(top,#F7C1B9 0%,#A21A00 50%,#A5473B 51%,#D28C8E 100%);
+  background:-o-linear-gradient(top,#F7C1B9 0%,#A21A00 50%,#A5473B 51%,#D28C8E 100%);
+  background:linear-gradient(top,#F7C1B9 0%,#A21A00 50%,#A5473B 51%,#D28C8E 100%);
+  -webkit-box-shadow:inset 0px 1px 0px #fff,0px 0px 2px yellow,0px 0px 2px #F89B8B,0px 2px 5px #F89B8B,0px 2px 10px #F89B8B,0px 1px 10px #F79B8B;
+  -moz-box-shadow:inset 0px 1px 0px #fff,0px 0px 2px yellow,0px 0px 2px #F89B8B,0px 2px 5px #F89B8B,0px 2px 10px #F89B8B,0px 1px 10px #F79B8B;
+  box-shadow:inset 0px 1px 0px #fff,0px 0px 2px yellow,0px 0px 2px #F89B8B,0px 2px 5px #F89B8B,0px 2px 10px #F89B8B,0px 1px 10px #F79B8B;
+}
+
+#button-wrap .bt:active {
+  opacity:0.7;
+  filter:alpha(opacity=70);
+}
+
+#menu {
+  display:block;
+  background:#DFE4F4;
+  background:-webkit-linear-gradient(top,#fff 0%,#DFE4F4 50%,#D4DBED 50%,#E0E5F5 100%);
+  background:-moz-linear-gradient(top,#fff 0%,#DFE4F4 50%,#D4DBED 50%,#E0E5F5 100%);
+  background:-ms-linear-gradient(top,#fff 0%,#DFE4F4 50%,#D4DBED 50%,#E0E5F5 100%);
+  background:-o-linear-gradient(top,#fff 0%,#DFE4F4 50%,#D4DBED 50%,#E0E5F5 100%);
+  background:linear-gradient(top,#fff 0%,#DFE4F4 50%,#D4DBED 50%,#E0E5F5 100%);
+  border-bottom:1px solid #F0F0F0;
+}
+
+#menu ul {
+  font:normal 12px Calibri,Arial,Sans-Serif;
+  color:#000;
+  border-bottom:1px solid #B6BCCC;
+  overflow:auto;
+}
+
+#menu li {
+  display:inline;
+  float:left;
+}
+
+#menu li a {
+  display:block;
+  padding:1px 5px 1px;
+  margin:1px 1px 0px;
+  border:1px solid transparent;
+  color:#000;
+  text-decoration:none;
+  cursor:default;
+}
+
+#menu li a:hover,#menu li a:active,#menu li a:focus {
+  border-color:rgba(0,0,0,0.4);
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+  -webkit-box-shadow:inset 0px 0px 1px #fff;
+  -moz-box-shadow:inset 0px 0px 1px #fff;
+  box-shadow:inset 0px 0px 1px #fff;
+}
+
+#menu li a:active,#menu li a:focus {
+  -webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.7);
+  -moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.7);
+  box-shadow:inset 0px 1px 2px rgba(0,0,0,0.7);
+  background:rgba(0,0,0,0.1);
+}
+
+#menu li div.sub {
+  position:absolute;
+  left:auto;
+  width:190px;
+  background:#F0F0F0;
+  border:1px solid #999;
+  text-align:left;
+  -webkit-box-shadow:2px 1px 2px rgba(0,0,0,0.5);
+  -moz-box-shadow:2px 1px 2px rgba(0,0,0,0.5);
+  box-shadow:2px 1px 2px rgba(0,0,0,0.5);
+  opacity:0;
+  visibility:hidden;
+  -webkit-transition:all 0.26s ease-out;
+  -moz-transition:all 0.26s ease-out;
+  -ms-transition:all 0.26s ease-out;
+  -o-transition:all 0.26s ease-out;
+  transition:all 0.26s ease-out;
+}
+
+#menu li:hover div.sub {
+  opacity:1;
+  visibility:visible;
+}
+
+#menu li div.sub ul {
+  margin-left:30px;
+  width:160px;
+  overflow:visible;
+  border:none;
+  border-left:1px solid #ddd;
+  -webkit-box-shadow:-1px 0px 0px #fff;
+  -moz-box-shadow:-1px 0px 0px #fff;
+  box-shadow:-1px 0px 0px #fff;
+}
+
+#menu li ul li {
+  display:block;
+  float:none;
+  width:188px;
+  margin:2px 2px 2px 0px;
+  position:relative;
+  left:-30px;
+}
+
+#menu ul li.topline {
+  padding:2px 0px 1px;
+  margin:3px 0px 2px;
+}
+
+#menu li ul li.topline:before {
+  content:"";
+  border-top:1px solid #ddd;
+  border-bottom:1px solid #fff;
+  position:absolute;
+  right:0px;
+  top:0px;
+  width:158px;
+  height:0px;
+  font-size:0px;
+}
+
+#menu li ul li a {
+  display:block;
+  padding:4px 10px 3px 35px;
+  overflow:auto;
+}
+
+#menu li ul li a:hover,#menu li ul li a:active,#menu li ul li a:focus {
+  background:-webkit-linear-gradient(top,rgba(255,255,255,0.1),rgba(199,218,233,0.4));
+  background:-moz-linear-gradient(top,rgba(255,255,255,0.1),rgba(199,218,233,0.4));
+  background:-ms-linear-gradient(top,rgba(255,255,255,0.1),rgba(199,218,233,0.4));
+  background:-o-linear-gradient(top,rgba(255,255,255,0.1),rgba(199,218,233,0.4));
+  background:linear-gradient(top,rgba(255,255,255,0.1),rgba(199,218,233,0.4));
+  border-color:rgba(89,173,241,0.4);
+  -webkit-box-shadow:inset 0px 0px 1px #fff;
+  -moz-box-shadow:inset 0px 0px 1px #fff;
+  box-shadow:inset 0px 0px 1px #fff;
+}
+
+#menu li ul li a span {
+  float:right;
+  margin-right:7px;
+}
+
+#menu li ul li a.disable {
+  color:#666;
+}
+
+#menu li div.sub.min {
+  width:160px !important;
+}
+
+#menu li div.sub.min li {
+  width:158px !important;
+}
+
+#menu li div.sub.min li.topline:before {
+  width:128px !important;
+}
+
+#container {
+  width:786px;
+  height:367px;
+  margin:0px 0px 0px 5px;
+  background:#fff;
+  border:1px solid #000;
+  -webkit-box-shadow:1px 1px 0px rgba(255,255,255,0.9),-1px -1px 0px rgba(255,255,255,0.9),-1px 1px 0px rgba(255,255,255,0.9),1px -1px 0px rgba(255,255,255,0.9);
+  -moz-box-shadow:1px 1px 0px rgba(255,255,255,0.9),-1px -1px 0px rgba(255,255,255,0.9),-1px 1px 0px rgba(255,255,255,0.9),1px -1px 0px rgba(255,255,255,0.9);
+  box-shadow:1px 1px 0px rgba(255,255,255,0.9),-1px -1px 0px rgba(255,255,255,0.9),-1px 1px 0px rgba(255,255,255,0.9),1px -1px 0px rgba(255,255,255,0.9);
+}
+
+#container textarea {
+  overflow:auto;
+  overflow-y:scroll;
+  width:784px;
+  height:344px;
+  margin:0px 0px 0px 0px;
+  border:1px solid #A4C9E3;
+  border-top-color:#3D7BAD;
+  font:normal 13px 'Lucida Console',Monaco,Courier,Monospace;
+  color:#000;
+  resize:none;
+}
+
+a.author {
+  position:fixed;
+  bottom:10px;
+  right:10px;
+  color:#fff;
+  font:normal 10px Calibri,Arial,Sans-Serif;
+  text-decoration:none;
+  -webkit-transition:all 0.26s ease-out;
+  -moz-transition:all 0.26s ease-out;
+  -ms-transition:all 0.26s ease-out;
+  -o-transition:all 0.26s ease-out;
+  transition:all 0.26s ease-out;
+  -webkit-animation:anim 1s;
+  -moz-animation:anim 1s;
+  -ms-animation:anim 1s;
+  -o-animation:anim 1s;
+  animation:anim 1s;
+}
+
+a.author:hover {
+  font-size:20px;
+}
+
+
+.clear{clear:both;}
+
+@-webkit-keyframes anim{
+from{right:-1000px;}
+to{right:10px;}
+}
+@-moz-keyframes anim{
+from{right:-1000px;}
+to{right:10px;}
+}
+@-ms-keyframes anim{
+from{right:-1000px;}
+to{right:10px;}
+}
+@-o-keyframes anim{
+from{right:-1000px;}
+to{right:10px;}
+}
+@keyframes anim{
+from{right:-1000px;}
+to{right:10px;}
+}
+
+</style>
+</head>
+<body>
+
+
+<div id="w-frame">
+	<div id="w-frame-white">
+	<div id="title">
+		<h4>Pure CSS3 Windows7 Basic Frame - Notepad</h4>
+		<div id="button-wrap">
+			<div class="bt close" title="Close"></div>
+			<div class="bt maximize" title="Maximize"></div>
+			<div class="bt minimize" title="Minimize"></div>
+		</div>
+		<div class="clear"></div>
+	</div> <!-- title -->
+	
+	<div id="container">
+		<div id="menu">
+			<ul>
+				<li><a href="#">File</a>
+					<div class="sub">
+						<ul>
+							<li><a href="#">New <span>Ctrl+N</span></a></li>
+							<li><a href="#">Open... <span>Ctrl+O</span></a></li>
+							<li><a href="#">Save <span>Ctrl+S</span></a></li>
+							<li class="topline"><a href="#">Save As...</a></li>
+							<li><a href="#">Page Setup...</a></li>
+							<li><a href="#">Print... <span>Ctrl+P</span></a></li>
+							<li class="topline"><a href="#">Exit</a></li>
+						</ul>
+					</div>
+				</li>
+				
+				<li><a href="#">Edit</a>				
+					<div class="sub">
+						<ul>
+							<li><a href="#">Undo <span>Ctrl+Z</span></a></li>
+							<li class="topline"><a href="#" class="disable">Cut <span>Ctrl+X</span></a></li>
+							<li><a href="#" class="disable">Copy <span>Ctrl+C</span></a></li>
+							<li><a href="#">Paste <span>Ctrl+V</span></a></li>
+							<li><a href="#">Delete <span>Del</span></a></li>
+							<li class="topline"><a href="#">Find... <span>Ctrl+F</span></a></li>
+							<li><a href="#">Find Next <span>F3</span></a></li>
+							<li><a href="#">Replace... <span>Ctrl+H</span></a></li>
+							<li><a href="#" class="disable">Go To... <span>Ctrl+G</span></a></li>
+							<li class="topline"><a href="#">Select All <span>Ctrl+A</span></a></li>
+							<li><a href="#">Time/Date <span>F5</span></a></li>
+						</ul>
+					</div>
+				</li>
+				
+				<li><a href="#">Format</a>
+					<div class="sub min">
+						<ul>
+							<li><a href="#">Word Wrap</a></li>
+							<li><a href="#">Font... <span></span></a></li>
+						</ul>
+					</div>
+				</li>
+				
+				<li><a href="#">View</a>
+					<div class="sub min">
+						<ul>
+							<li><a href="#" class="disable">Status bar</a></li>
+						</ul>
+					</div>
+				</li>
+			
+				<li><a href="#">Help</a>
+					<div class="sub min">
+						<ul>
+							<li><a href="#">View Help</a></li>
+							<li class="topline"><a href="#">About Notepad</a></li>
+						</ul>
+					</div>
+				</li>
+			
+			</ul>
+		</div> <!-- end menu -->
+		
+		<!-- NOTEPAD CONTENTS -->
+		<textarea autofocus="autofocus" spellcheck="false">
+Author  : Taufik Nurrohman
+Date    : 17 December 2011
+Note    : I can't speak English well... T_T
+		</textarea>
+		<!-- END NOTEPAD CONTENTS -->
+	
+	</div> <!-- container -->
+	
+	</div> <!-- w-frame white -->
+</div> <!-- w-frame -->
+
+illustration notepad with CSS. effects in it are made by the dominance of css box-shadow and a linear gradient. inset effect is used to create glowing effect around the white border:
+
+
+I should be able to use an easier way like this
+
+But then I made this when I do not quite understand the workings of a complete box-shadow.
+
+<a href="http://hompimpaalaihumgambreng.blogspot.com" class="author">Pure CSS3 Windows7 Basic Frame by Taufik Nurrohman</a>
+
+
+</body>
+</html>
