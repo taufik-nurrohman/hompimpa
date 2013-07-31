@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="jquery plugins, design, tooltip, image gallery, responsive" name="keywords">
+<meta content="Jimp is a lightweight JQuery tooltip plugin for image preview. Very responsive to the position and easy in installation." name="description">
+<meta content="Taufik Nurrohman" name="author">
+<meta charset="utf-8">
+<title>Jimp Demo</title>
+<link rel="stylesheet" media="screen" href="css/jimp.css" type="text/css">
+<link rel="stylesheet" media="screen" href="css/style.css" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script src="js/jimp.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+	$('#example a').jimp({
+		hideOnChange:false,
+		hideOnOut:false
+	});
+});
+</script>
+</head>
+<body>
+
+
+<div id="page-wrap">
+<h1>Jimp - A JQuery Tooltip for Image Preview</h1>
+<section id="example">
+<a title="Autumn Orange" href="http://api.jquery.com" data-preview="http://2.bp.blogspot.com/-unuh0jZwHw4/T7uHKYS6c2I/AAAAAAAACtk/ns7qXyu_pTA/s600/The-best-top-autumn-desktop-wallpapers-35.jpg">
+	<img alt="" src="http://2.bp.blogspot.com/-unuh0jZwHw4/T7uHKYS6c2I/AAAAAAAACtk/ns7qXyu_pTA/s72-c/The-best-top-autumn-desktop-wallpapers-35.jpg" />
+</a>
+<a title="Lavender Flowers" href="http://1.bp.blogspot.com/-mNhRTmkZ284/T1tMrR1TNPI/AAAAAAAACTk/a6PapXX4T6Q/s1600/LavenderFlowers.jpg">
+	<img alt="" src="http://1.bp.blogspot.com/-mNhRTmkZ284/T1tMrR1TNPI/AAAAAAAACTk/a6PapXX4T6Q/s72-c/LavenderFlowers.jpg" />
+</a>
+<a title="Nice Landscape" href="http://1.bp.blogspot.com/-BB2C7C9l0O4/TxBL_sWowYI/AAAAAAAAB88/N0H1Ux2BNgs/s600/1342597_12820186.jpg">
+	<img alt="" src="http://1.bp.blogspot.com/-BB2C7C9l0O4/TxBL_sWowYI/AAAAAAAAB88/N0H1Ux2BNgs/s72-c/1342597_12820186.jpg" />
+</a>
+<a title="Flowers" href="http://1.bp.blogspot.com/-goQLX4iwvC4/Tq39OKiJueI/AAAAAAAABE0/_732Qyb6Pzw/s1600/flowers1.jpg">
+	<img alt="" src="http://1.bp.blogspot.com/-goQLX4iwvC4/Tq39OKiJueI/AAAAAAAABE0/_732Qyb6Pzw/s72-c/flowers1.jpg" />
+</a>
+<a title="Autumn Leaves" href="http://3.bp.blogspot.com/-eTUpziELmaY/TvPeQCLErlI/AAAAAAAABxQ/eNgakyIZwXA/s1600/autumn.jpg">
+	<img alt="" src="http://3.bp.blogspot.com/-eTUpziELmaY/TvPeQCLErlI/AAAAAAAABxQ/eNgakyIZwXA/s72-c/autumn.jpg" />
+</a>
+<a title="Red Flower" href="http://1.bp.blogspot.com/-j8Juf_L4q5g/TmL_x6U54bI/AAAAAAAAAzE/HVf40rUrJQE/s1600/319.jpg">
+	<img alt="" src="http://1.bp.blogspot.com/-j8Juf_L4q5g/TmL_x6U54bI/AAAAAAAAAzE/HVf40rUrJQE/s72-c/319.jpg" />
+</a>
+<a href="http://4.bp.blogspot.com/-vy9qIM2Oing/TggNT5Rq9SI/AAAAAAAAAT4/feYB9OD6fAc/s600/2286671509_71bd07ba72_o.jpg">
+	<img alt="" src="http://4.bp.blogspot.com/-vy9qIM2Oing/TggNT5Rq9SI/AAAAAAAAAT4/feYB9OD6fAc/s72-c/2286671509_71bd07ba72_o.jpg" />
+</a>
+<div class="clear"></div>
+<a href="http://www.google.com" data-preview="http://4.bp.blogspot.com/-vy9qIM2Oing/TggNT5Rq9SI/AAAAAAAAAT4/feYB9OD6fAc/s600/2286671509_71bd07ba72_o.jpg">As a link!</a>
+<div class="clear"></div>
+</section>
+<section id="features">
+<h2>Features &amp; Download</h2>
+<ul>
+	<li>Lightweight plugin</li>
+	<li>Less markup</li>
+	<li>Responsive: Tooltip will always stay on visible area</li>
+	<li>Custom Preview URL</li>
+</ul>
+<a class="button" href="/svn/trunk/Jimp/jimp.zip">Download</a>
+</section>
+<section id="usage">
+<h2>Basic Usage</h2>
+<h3>The Markup</h3>
+<pre><code><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"large-image.jpg"</span> <span class="attribute">title</span>=<span class="value">"Image Title"</span>&gt;</span><span class="tag">&lt;<span class="title">img</span> <span class="attribute">alt</span>=<span class="value">""</span> <span class="attribute">src</span>=<span class="value">"thumbnail-image.jpg"</span>/&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;<span class="title">a</span> <span class="attribute">data-preview</span>=<span class="value">"large-image.jpg"</span> <span class="attribute">href</span>=<span class="value">"page-url.html"</span> <span class="attribute">title</span>=<span class="value">"Image Title"</span>&gt;</span>This is an example link!<span class="tag">&lt;/<span class="title">a</span>&gt;</span></code></pre>
+
+<h3>The JQuery</h3>
+<pre><code><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"jquery-1.7.2.min.js"</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+<span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"js/jimp.js"</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+<span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="javascript">
+$(<span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
+    $(<span class="string">'#example a'</span>).jimp();
+});
+</span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></pre>
+</section>
+<section id="options">
+<h2>Default Configuration</h2>
+<pre><code>$(<span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
+    $(<span class="string">'#example a'</span>).jimp({
+        width: <span class="number">40</span>, <span class="comment">// default width of the tooltip before image loaded</span>
+        height: <span class="number">40</span>, <span class="comment">// default height of the tooltip before image loaded</span>
+        resizeSpeed: <span class="number">200</span>, <span class="comment">// resize speed of container</span>
+        fadeSpeed: <span class="number">400</span>, <span class="comment">// fade speed of image</span>
+        delay: <span class="number">1000</span>, <span class="comment">// mouseenter delay before excecuting</span>
+        offsetTop: <span class="number">20</span>, <span class="comment">// tooltip offset top from pointer</span>
+        offsetLeft: <span class="number">20</span>, <span class="comment">// tooltip offset left from pointer</span>
+        linkText: <span class="string">'save'</span>, <span class="comment">// save button label</span>
+        closeText: <span class="string">'&amp;#215'</span>, <span class="comment">// close button label</span>
+        hideOnOut: <span class="literal">false</span> <span class="comment">// if true, then when pointer mouse leave from image/link target, the tooltip will hidden and back to it's normal size</span>
+        hideOnChange: <span class="literal">false</span> <span class="comment">// if true, then when pointer mouse leave from image/link target (and then enter to the other target), the tooltip will hidden and back to it's normal size</span>
+    });
+});</code></pre>
+</section>
+<footer>Just another work by <a href="http://hompimpaalaihumgambreng.blogspot.com/">Taufik Nurrohman</a> :]</footer>
+</div>
+
+</body>
+</html>
